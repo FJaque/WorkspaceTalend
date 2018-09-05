@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0zgI8JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_0zgI8ZveEeiR3p5hgL4c8w" comment="" name="dwhhost" prompt="dwhhost?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter xmi:id="_0zgI8pveEeiR3p5hgL4c8w" comment="" name="dwhport" prompt="dwhport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zgI85veEeiR3p5hgL4c8w" comment="" name="dwhdatabase" prompt="dwhdatabase?" promptNeeded="false" type="id_String" value="&quot;YamanaDWH&quot;"/>
+    <contextParameter xmi:id="_0zgI9JveEeiR3p5hgL4c8w" comment="" name="dwhusername" prompt="dwhusername?" promptNeeded="false" type="id_String" value="&quot;talend&quot;"/>
+    <contextParameter xmi:id="_0zgI9ZveEeiR3p5hgL4c8w" comment="" name="dwhpassword" prompt="dwhpassword?" promptNeeded="false" type="id_Password" value="YdTnhbqBAdo="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zgI9pveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_0zgI95veEeiR3p5hgL4c8w" comment="" name="dwhhost" prompt="dwhhost?" promptNeeded="false" type="id_String" value="&quot;CLFLOSQL01&quot;"/>
+    <contextParameter xmi:id="_0zgI-JveEeiR3p5hgL4c8w" comment="" name="dwhport" prompt="dwhport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zgI-ZveEeiR3p5hgL4c8w" comment="" name="dwhdatabase" prompt="dwhdatabase?" promptNeeded="false" type="id_String" value="&quot;GestionFLO_DW&quot;"/>
+    <contextParameter xmi:id="_0zgI-pveEeiR3p5hgL4c8w" comment="" name="dwhusername" prompt="dwhusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_0zgI-5veEeiR3p5hgL4c8w" comment="" name="dwhpassword" prompt="dwhpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zgI_JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_0zgI_ZveEeiR3p5hgL4c8w" comment="" name="dwhhost" prompt="dwhhost?" promptNeeded="false" type="id_String" value="&quot;STGSQLTSTVM01&quot;"/>
+    <contextParameter xmi:id="_0zgI_pveEeiR3p5hgL4c8w" comment="" name="dwhport" prompt="dwhport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zgI_5veEeiR3p5hgL4c8w" comment="" name="dwhdatabase" prompt="dwhdatabase?" promptNeeded="false" type="id_String" value="&quot;GestionFLO_DW&quot;"/>
+    <contextParameter xmi:id="_0zgJAJveEeiR3p5hgL4c8w" comment="" name="dwhusername" prompt="dwhusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_0zgJAZveEeiR3p5hgL4c8w" comment="" name="dwhpassword" prompt="dwhpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zgJApveEeiR3p5hgL4c8w" confirmationNeeded="false" name="TestIP">
+    <contextParameter xmi:id="_0zgJA5veEeiR3p5hgL4c8w" comment="" name="dwhhost" prompt="dwhhost?" promptNeeded="false" type="id_String" value="&quot;10.100.1.21&quot;"/>
+    <contextParameter xmi:id="_0zgJBJveEeiR3p5hgL4c8w" comment="" name="dwhport" prompt="dwhport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zgJBZveEeiR3p5hgL4c8w" comment="" name="dwhdatabase" prompt="dwhdatabase?" promptNeeded="false" type="id_String" value="&quot;GestionFLO_DW&quot;"/>
+    <contextParameter xmi:id="_0zgJBpveEeiR3p5hgL4c8w" comment="" name="dwhusername" prompt="dwhusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_0zgwAJveEeiR3p5hgL4c8w" comment="" name="dwhpassword" prompt="dwhpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

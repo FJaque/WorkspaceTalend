@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_00j44JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_00j44ZveEeiR3p5hgL4c8w" comment="" name="limshost" prompt="limshost?" promptNeeded="false" type="id_String" value="&quot;10.100.1.30&quot;"/>
+    <contextParameter xmi:id="_00j44pveEeiR3p5hgL4c8w" comment="" name="limsport" prompt="limsport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00j445veEeiR3p5hgL4c8w" comment="" name="limsdatabase" prompt="limsdatabase?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_FLORIDA&quot;"/>
+    <contextParameter xmi:id="_00j45JveEeiR3p5hgL4c8w" comment="" name="limsusername" prompt="limsusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00j45ZveEeiR3p5hgL4c8w" comment="" name="limspassword" prompt="limspassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_00j45pveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_00j455veEeiR3p5hgL4c8w" comment="" name="limshost" prompt="limshost?" promptNeeded="false" type="id_String" value="&quot;CLFLOGDMS01 &quot;"/>
+    <contextParameter xmi:id="_00j46JveEeiR3p5hgL4c8w" comment="" name="limsport" prompt="limsport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00j46ZveEeiR3p5hgL4c8w" comment="" name="limsdatabase" prompt="limsdatabase?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_FLORIDA&quot;"/>
+    <contextParameter xmi:id="_00j46pveEeiR3p5hgL4c8w" comment="" name="limsusername" prompt="limsusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00j465veEeiR3p5hgL4c8w" comment="" name="limspassword" prompt="limspassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_00j47JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_00j47ZveEeiR3p5hgL4c8w" comment="" name="limshost" prompt="limshost?" promptNeeded="false" type="id_String" value="&quot;10.100.1.30&quot;"/>
+    <contextParameter xmi:id="_00j47pveEeiR3p5hgL4c8w" comment="" name="limsport" prompt="limsport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00j475veEeiR3p5hgL4c8w" comment="" name="limsdatabase" prompt="limsdatabase?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_FLORIDA&quot;"/>
+    <contextParameter xmi:id="_00j48JveEeiR3p5hgL4c8w" comment="" name="limsusername" prompt="limsusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00j48ZveEeiR3p5hgL4c8w" comment="" name="limspassword" prompt="limspassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_00j48pveEeiR3p5hgL4c8w" confirmationNeeded="false" name="TestIP">
+    <contextParameter xmi:id="_00j485veEeiR3p5hgL4c8w" comment="" name="limshost" prompt="limshost?" promptNeeded="false" type="id_String" value="&quot;10.100.1.30&quot;"/>
+    <contextParameter xmi:id="_00j49JveEeiR3p5hgL4c8w" comment="" name="limsport" prompt="limsport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00j49ZveEeiR3p5hgL4c8w" comment="" name="limsdatabase" prompt="limsdatabase?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_FLORIDA&quot;"/>
+    <contextParameter xmi:id="_00j49pveEeiR3p5hgL4c8w" comment="" name="limsusername" prompt="limsusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00j495veEeiR3p5hgL4c8w" comment="" name="limspassword" prompt="limspassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

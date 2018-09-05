@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_00PIwJveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_00PIwZveEeiR3p5hgL4c8w" comment="" name="etruckhost" prompt="etruckhost?" promptNeeded="false" type="id_String" value="&quot;10.100.12.69&quot;"/>
+    <contextParameter xmi:id="_00PIwpveEeiR3p5hgL4c8w" comment="" name="etruckport" prompt="etruckport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00PIw5veEeiR3p5hgL4c8w" comment="" name="etruckdatabase" prompt="etruckdatabase?" promptNeeded="false" type="id_String" value="&quot;Etruck3&quot;"/>
+    <contextParameter xmi:id="_00PIxJveEeiR3p5hgL4c8w" comment="" name="etruckusername" prompt="etruckusername?" promptNeeded="false" type="id_String" value="svc.flo.gestion"/>
+    <contextParameter xmi:id="_00PIxZveEeiR3p5hgL4c8w" comment="" name="etruckpassword" prompt="etruckpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_00PIxpveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_00PIx5veEeiR3p5hgL4c8w" comment="" name="etruckhost" prompt="etruckhost?" promptNeeded="false" type="id_String" value="&quot;Flowks0029&quot;"/>
+    <contextParameter xmi:id="_00PIyJveEeiR3p5hgL4c8w" comment="" name="etruckport" prompt="etruckport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00PIyZveEeiR3p5hgL4c8w" comment="" name="etruckdatabase" prompt="etruckdatabase?" promptNeeded="false" type="id_String" value="&quot;Etruck3&quot;"/>
+    <contextParameter xmi:id="_00PIypveEeiR3p5hgL4c8w" comment="" name="etruckusername" prompt="etruckusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00PIy5veEeiR3p5hgL4c8w" comment="" name="etruckpassword" prompt="etruckpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_00PIzJveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_00PIzZveEeiR3p5hgL4c8w" comment="" name="etruckhost" prompt="etruckhost?" promptNeeded="false" type="id_String" value="&quot;Flowks0029&quot;"/>
+    <contextParameter xmi:id="_00PIzpveEeiR3p5hgL4c8w" comment="" name="etruckport" prompt="etruckport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00PIz5veEeiR3p5hgL4c8w" comment="" name="etruckdatabase" prompt="etruckdatabase?" promptNeeded="false" type="id_String" value="&quot;Etruck3&quot;"/>
+    <contextParameter xmi:id="_00PI0JveEeiR3p5hgL4c8w" comment="" name="etruckusername" prompt="etruckusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00PI0ZveEeiR3p5hgL4c8w" comment="" name="etruckpassword" prompt="etruckpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_00PI0pveEeiR3p5hgL4c8w" confirmationNeeded="false" name="TestIP">
+    <contextParameter xmi:id="_00PI05veEeiR3p5hgL4c8w" comment="" name="etruckhost" prompt="etruckhost?" promptNeeded="false" type="id_String" value="&quot;10.100.12.69&quot;"/>
+    <contextParameter xmi:id="_00PI1JveEeiR3p5hgL4c8w" comment="" name="etruckport" prompt="etruckport?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_00PI1ZveEeiR3p5hgL4c8w" comment="" name="etruckdatabase" prompt="etruckdatabase?" promptNeeded="false" type="id_String" value="&quot;Etruck3&quot;"/>
+    <contextParameter xmi:id="_00PI1pveEeiR3p5hgL4c8w" comment="" name="etruckusername" prompt="etruckusername?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_00PI15veEeiR3p5hgL4c8w" comment="" name="etruckpassword" prompt="etruckpassword?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

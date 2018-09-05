@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_2xxF0AA1Eei89-GQXtDKLQ" name="DataEntry" id="_pvEEgAA1Eei89-GQXtDKLQ" label="DataEntry" dataPackage="_G_rIwAA_EeiI0LR-Bj337w" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://localhost:1433;DatabaseName=YamanaDataEntryTest;" dbVersionString="MSSQL_PROP" Port="1433" Username="talend" Password="YdTnhbqBAdo=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="YamanaDataEntryTest" SqlSynthax="Sintaxis SQL" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_2x0JIAA1Eei89-GQXtDKLQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_2yp2oAA1Eei89-GQXtDKLQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_2yuvIAA1Eei89-GQXtDKLQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_2yuvIQA1Eei89-GQXtDKLQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_2yuvIgA1Eei89-GQXtDKLQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_2yuvIwA1Eei89-GQXtDKLQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_2yuvJAA1Eei89-GQXtDKLQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_2yuvJQA1Eei89-GQXtDKLQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_2y2q8AA1Eei89-GQXtDKLQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_2y2q8QA1Eei89-GQXtDKLQ" tag="DB ProductVersion" value="10.00.5538"/>
+    <taggedValue xmi:id="_2y2q8gA1Eei89-GQXtDKLQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_2x0JIQA1Eei89-GQXtDKLQ" key="CONN_PARA_KEY_USERNAME" value="talend"/>
+    <parameters xmi:id="_DvEwIAA-Eeif-e2pfFw-lg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_G_rIwAA_EeiI0LR-Bj337w" name="YamanaDataEntryTest" dataManager="_2xxF0AA1Eei89-GQXtDKLQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_G_rIwQA_EeiI0LR-Bj337w" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

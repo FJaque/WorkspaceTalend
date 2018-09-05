@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_mJmeUBDLEei_WtzwE9LElQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_mJmeURDLEei_WtzwE9LElQ" comment="Fecha de los registros que se van a pasar" name="Fecha" prompt="¿Fecha registros?" promptNeeded="true" type="id_String" value="11-24-2017"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_buuiEBWFEeilTbTLmU7usw" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_buuiERWFEeilTbTLmU7usw" comment="Fecha de los registros que se van a pasar" name="Fecha" prompt="¿Fecha registros?" promptNeeded="true" type="id_String" value="11-24-2017"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_buuiEhWFEeilTbTLmU7usw" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_buuiExWFEeilTbTLmU7usw" comment="Fecha de los registros que se van a pasar" name="Fecha" prompt="¿Fecha registros?" promptNeeded="true" type="id_String" value="11-24-2017"/>
+  </talendfile:ContextType>
+</xmi:XMI>

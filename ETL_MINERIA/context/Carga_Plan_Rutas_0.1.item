@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_rJwcYE-_Eeijkfm-G2p6Ag" confirmationNeeded="false" name="Desarrollo">
+    <contextParameter xmi:id="_JNNIQE_IEeijkfm-G2p6Ag" comment="Ruta de Anaconda Python" name="RutaPython" prompt="RutaPython?" promptNeeded="false" type="id_Directory" value="C:/Users/BackSpace/Anaconda2/"/>
+    <contextParameter xmi:id="_jAguQE_IEeijkfm-G2p6Ag" comment="Ruta del archivo Formatear Excel.py" name="RutaFormatearExcel" prompt="RutaFormatearExcel?" promptNeeded="false" type="id_Directory" value="C:/BackSpace/Vertical Minería/WebMineria/WebMineria/ETL/ETL_Carga_Plan/"/>
+    <contextParameter xmi:id="_jAguQU_IEeijkfm-G2p6Ag" comment="Ruta de archivos temporales" name="RutaTemporales" prompt="RutaTemporales?" promptNeeded="false" type="id_Directory" value="C:/Users/BackSpace/AppData/Local/Temp/"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_GJqYYE_AEeijkfm-G2p6Ag" confirmationNeeded="false" name="Produccion">
+    <contextParameter xmi:id="_JNNIQU_IEeijkfm-G2p6Ag" comment="Ruta de Anaconda Python" name="RutaPython" prompt="RutaPython?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter xmi:id="_jAguQk_IEeijkfm-G2p6Ag" comment="Ruta del archivo Formatear Excel.py" name="RutaFormatearExcel" prompt="RutaFormatearExcel?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter xmi:id="_jAguQ0_IEeijkfm-G2p6Ag" comment="Ruta de archivos temporales" name="RutaTemporales" prompt="RutaTemporales?" promptNeeded="false" type="id_Directory" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_GJqYY0_AEeijkfm-G2p6Ag" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_JNNIQk_IEeijkfm-G2p6Ag" comment="Ruta de Anaconda Python" name="RutaPython" prompt="RutaPython?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter xmi:id="_jAguRE_IEeijkfm-G2p6Ag" comment="Ruta del archivo Formatear Excel.py" name="RutaFormatearExcel" prompt="RutaFormatearExcel?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter xmi:id="_jAguRU_IEeijkfm-G2p6Ag" comment="Ruta de archivos temporales" name="RutaTemporales" prompt="RutaTemporales?" promptNeeded="false" type="id_Directory" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

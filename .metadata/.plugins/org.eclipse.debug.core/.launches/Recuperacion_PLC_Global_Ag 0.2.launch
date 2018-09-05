@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.talend.designer.runprocess.jobLaunchConfiguration">
+<stringAttribute key="CURRENT_PROJECT_NAME" value="Gestion_Florida"/>
+<stringAttribute key="TALEND_JOB_ID" value="_-AzaIJ-8EeizFvh7vwJFew"/>
+<stringAttribute key="TALEND_JOB_NAME" value="Recuperacion_PLC_Global_Ag"/>
+<stringAttribute key="TALEND_JOB_VERSION" value="0.2"/>
+</launchConfiguration>

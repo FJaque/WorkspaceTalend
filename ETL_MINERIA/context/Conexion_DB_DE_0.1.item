@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_uDtI0EM5Eei7ua-BwIGwGA" confirmationNeeded="false" name="Desarrollo">
+    <contextParameter xmi:id="_uDtI0UM5Eei7ua-BwIGwGA" comment="Nombre o IP servidor" name="host_de" prompt="host_de?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter xmi:id="_uDtI0kM5Eei7ua-BwIGwGA" comment="Puerto de conexión" name="puerto_de" prompt="puerto_de?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_uDtI00M5Eei7ua-BwIGwGA" comment="Usuario de SQL" name="usuario_de" prompt="usuario_de?" promptNeeded="false" type="id_String" value="&quot;Usuario&quot;"/>
+    <contextParameter xmi:id="_uDtI1EM5Eei7ua-BwIGwGA" comment="Pass de SQL" name="pass_de" prompt="pass_de?" promptNeeded="false" type="id_Password" value="USvgxeK5b/Y="/>
+    <contextParameter xmi:id="_F30eQEM6Eei7ua-BwIGwGA" comment="Nombre base de datos" name="database_de" prompt="database_de?" promptNeeded="false" type="id_String" value="&quot;VM_DataEntry&quot;"/>
+    <contextParameter xmi:id="_MN7PQEM7Eei7ua-BwIGwGA" comment="Esquema de base de datos" name="esquema_de" prompt="esquema_de?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uDtI1UM5Eei7ua-BwIGwGA" confirmationNeeded="false" name="Produccion">
+    <contextParameter xmi:id="_uDtI1kM5Eei7ua-BwIGwGA" comment="Nombre o IP servidor" name="host_de" prompt="host_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uDtI10M5Eei7ua-BwIGwGA" comment="Puerto de conexión" name="puerto_de" prompt="puerto_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uDtI2EM5Eei7ua-BwIGwGA" comment="Usuario de SQL" name="usuario_de" prompt="usuario_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uDtI2UM5Eei7ua-BwIGwGA" comment="Pass de SQL" name="pass_de" prompt="pass_de?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_F30eQUM6Eei7ua-BwIGwGA" comment="Nombre base de datos" name="database_de" prompt="database_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_MN7PQUM7Eei7ua-BwIGwGA" comment="Esquema de base de datos" name="esquema_de" prompt="esquema_de?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uDtI2kM5Eei7ua-BwIGwGA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_uDtI20M5Eei7ua-BwIGwGA" comment="Nombre o IP servidor" name="host_de" prompt="host_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uDtI3EM5Eei7ua-BwIGwGA" comment="Puerto de conexión" name="puerto_de" prompt="puerto_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uDtI3UM5Eei7ua-BwIGwGA" comment="Usuario de SQL" name="usuario_de" prompt="usuario_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uDtI3kM5Eei7ua-BwIGwGA" comment="Pass de SQL" name="pass_de" prompt="pass_de?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_F30eQkM6Eei7ua-BwIGwGA" comment="Nombre base de datos" name="database_de" prompt="database_de?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_MN7PQkM7Eei7ua-BwIGwGA" comment="Esquema de base de datos" name="esquema_de" prompt="esquema_de?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

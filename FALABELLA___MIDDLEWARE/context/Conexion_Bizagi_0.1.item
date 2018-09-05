@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_IZY5QKY5EeiaUsLiEik8uA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_poNZIKY6EeiaUsLiEik8uA" comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" type="id_String" value="&quot;34.196.15.115&quot;"/>
+  <contextParameter xmi:id="_poNZIaY6EeiaUsLiEik8uA" comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+  <contextParameter xmi:id="_poNZIqY6EeiaUsLiEik8uA" comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" type="id_String" value="&quot;Workflow&quot;"/>
+</talendfile:ContextType>

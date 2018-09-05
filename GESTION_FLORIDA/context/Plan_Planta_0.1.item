@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_01BL4JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_01BL4ZveEeiR3p5hgL4c8w" comment="" name="ruta" prompt="ruta?" promptNeeded="false" type="id_String" value="&quot;C:\BackSpace\Yamana\ETL\&quot;"/>
+    <contextParameter xmi:id="_01BL4pveEeiR3p5hgL4c8w" comment="" name="nombre" prompt="nombre?" promptNeeded="false" type="id_String" value="&quot;Plan planta.xlsx&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_01BL45veEeiR3p5hgL4c8w" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_01BL5JveEeiR3p5hgL4c8w" comment="" name="ruta" prompt="ruta?" promptNeeded="false" type="id_String" value="&quot;C:\Sistema Gestion Florida\&quot;"/>
+    <contextParameter xmi:id="_01BL5ZveEeiR3p5hgL4c8w" comment="" name="nombre" prompt="nombre?" promptNeeded="false" type="id_String" value="&quot;archivo_temporal.xlsx&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_01BL5pveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_01BL55veEeiR3p5hgL4c8w" comment="" name="ruta" prompt="ruta?" promptNeeded="false" type="id_String" value="&quot;C:\Users\svc.flo.gestion\AppData\Local\Temp\&quot;"/>
+    <contextParameter xmi:id="_01BL6JveEeiR3p5hgL4c8w" comment="" name="nombre" prompt="nombre?" promptNeeded="false" type="id_String" value="&quot;archivo_temporal.xlsx&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_01BL6ZveEeiR3p5hgL4c8w" confirmationNeeded="false" name="TestIP">
+    <contextParameter xmi:id="_01BL6pveEeiR3p5hgL4c8w" comment="" name="ruta" prompt="ruta?" promptNeeded="false" type="id_String" value="&quot;C:\inetpub\wwwroot\DataEntryDev\&quot;"/>
+    <contextParameter xmi:id="_01BL65veEeiR3p5hgL4c8w" comment="" name="nombre" prompt="nombre?" promptNeeded="false" type="id_String" value="&quot;archivo_temporal.xlsx&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

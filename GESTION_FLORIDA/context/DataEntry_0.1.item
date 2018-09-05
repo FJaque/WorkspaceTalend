@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0zyc0JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_0zyc0ZveEeiR3p5hgL4c8w" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter xmi:id="_0zyc0pveEeiR3p5hgL4c8w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zyc05veEeiR3p5hgL4c8w" comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value="&quot;YamanaDataEntryTest&quot;"/>
+    <contextParameter xmi:id="_0zyc1JveEeiR3p5hgL4c8w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;talend&quot;"/>
+    <contextParameter xmi:id="_0zyc1ZveEeiR3p5hgL4c8w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="YdTnhbqBAdo="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zzD4JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_0zzD4ZveEeiR3p5hgL4c8w" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="&quot;CLFLOSQL01&quot;"/>
+    <contextParameter xmi:id="_0zzD4pveEeiR3p5hgL4c8w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zzD45veEeiR3p5hgL4c8w" comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value="&quot;GestionFLO_DE&quot;"/>
+    <contextParameter xmi:id="_0zzD5JveEeiR3p5hgL4c8w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_0zzD5ZveEeiR3p5hgL4c8w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zzD5pveEeiR3p5hgL4c8w" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_0zzD55veEeiR3p5hgL4c8w" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="&quot;STGSQLTSTVM01&quot;"/>
+    <contextParameter xmi:id="_0zzD6JveEeiR3p5hgL4c8w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zzD6ZveEeiR3p5hgL4c8w" comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value="&quot;GestionFLO&quot;"/>
+    <contextParameter xmi:id="_0zzD6pveEeiR3p5hgL4c8w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_0zzD65veEeiR3p5hgL4c8w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zzD7JveEeiR3p5hgL4c8w" confirmationNeeded="false" name="TestIP">
+    <contextParameter xmi:id="_0zzD7ZveEeiR3p5hgL4c8w" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="&quot;10.100.1.21&quot;"/>
+    <contextParameter xmi:id="_0zzD7pveEeiR3p5hgL4c8w" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_0zzD75veEeiR3p5hgL4c8w" comment="" name="database" prompt="database?" promptNeeded="false" type="id_String" value="&quot;GestionFLO_DE&quot;"/>
+    <contextParameter xmi:id="_0zzD8JveEeiR3p5hgL4c8w" comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="&quot;svc.flo.gestion&quot;"/>
+    <contextParameter xmi:id="_0zzD8ZveEeiR3p5hgL4c8w" comment="" name="password" prompt="password?" promptNeeded="false" type="id_Password" value="T8a55oypYoec86SISSX8tQ=="/>
+  </talendfile:ContextType>
+</xmi:XMI>
