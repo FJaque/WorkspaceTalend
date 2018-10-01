@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_IZY5QKY5EeiaUsLiEik8uA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_poNZIKY6EeiaUsLiEik8uA" comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" type="id_String" value="&quot;34.196.15.115&quot;"/>
+    <contextParameter xmi:id="_poNZIaY6EeiaUsLiEik8uA" comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter xmi:id="_poNZIqY6EeiaUsLiEik8uA" comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_EODEkMDwEeis1daIs3hEkQ" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_EODroMDwEeis1daIs3hEkQ" comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" type="id_String" value="&quot;test-workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter xmi:id="_EODrocDwEeis1daIs3hEkQ" comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter xmi:id="_EODrosDwEeis1daIs3hEkQ" comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_EODro8DwEeis1daIs3hEkQ" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_EODrpMDwEeis1daIs3hEkQ" comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" type="id_String" value="&quot;test-workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter xmi:id="_EODrpcDwEeis1daIs3hEkQ" comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" type="id_String" value="&quot;workflow-test&quot;"/>
+    <contextParameter xmi:id="_EODrpsDwEeis1daIs3hEkQ" comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" type="id_String" value="&quot;workflow-test&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

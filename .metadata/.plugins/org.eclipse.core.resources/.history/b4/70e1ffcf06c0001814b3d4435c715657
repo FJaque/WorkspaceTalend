@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="__5mtcZW5Eei_ifUMTb-yQw" id="__5W10JW5Eei_ifUMTb-yQw" label="RutasArchivos" version="0.1" statusCode="" item="__5mtc5W5Eei_ifUMTb-yQw" displayName="RutasArchivos">
+    <author href="../talend.project#_XDzU4oagEeioo_5pyUlH2Q"/>
+    <additionalProperties xmi:id="__5oioJW5Eei_ifUMTb-yQw" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="__5oioZW5Eei_ifUMTb-yQw" key="created_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="__5oiopW5Eei_ifUMTb-yQw" key="created_date" value="2018-08-01T15:37:52.458-0400"/>
+    <additionalProperties xmi:id="__5oio5W5Eei_ifUMTb-yQw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="__5oipJW5Eei_ifUMTb-yQw" key="modified_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="__5oipZW5Eei_ifUMTb-yQw" key="modified_date" value="2018-09-24T11:33:18.083-0300"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="__5mtcpW5Eei_ifUMTb-yQw" path="" locked="true" lockDate="2018-09-24T11:33:18.083-0300">
+    <locker href="../talend.project#_XDzU4oagEeioo_5pyUlH2Q"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ContextItem xmi:id="__5mtc5W5Eei_ifUMTb-yQw" property="__5mtcZW5Eei_ifUMTb-yQw" state="__5mtcpW5Eei_ifUMTb-yQw" defaultContext="Desa">
+    <context href="RutasArchivos_0.1.item#__5mtcJW5Eei_ifUMTb-yQw"/>
+    <context href="RutasArchivos_0.1.item#_K4mxoJW6Eei_ifUMTb-yQw"/>
+    <context href="RutasArchivos_0.1.item#_K4mxo5W6Eei_ifUMTb-yQw"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

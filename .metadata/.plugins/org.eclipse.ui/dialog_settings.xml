@@ -25,7 +25,7 @@
 			<item value="C:\BackSpace\SEA\ETL ICP Proyectos\Extraccion_SEIA_PRO_0.1.zip"/>
 		</list>
 		<section name="destinationFile">
-			<item value="C:\BackSpace\Yamana\Data Entry\WebYamana\ETL\Leyes_LIMS_CNTAU_0.1.zip" key="destinationFile"/>
+			<item value="C:\BackSpace\Yamana\Data Entry\WebYamana\ETL\Job Designs.zip" key="destinationFile"/>
 		</section>
 	</section>
 	<section name="ExportItemWizard">

@@ -2,27 +2,23 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Build Order:
 [INFO] 
-[INFO] GESTION_FLORIDA Codes Master
-[INFO] GESTION_FLORIDA Routines
-[INFO] GESTION_FLORIDA DORE_Barras (Job Designs)
-[INFO] GESTION_FLORIDA DORE_Coladas (Job Designs)
-[INFO] GESTION_FLORIDA Produccion_DORE (Job Designs)
-[INFO] GESTION_FLORIDA DORE_Embarque (Job Designs)
-[INFO] GESTION_FLORIDA DORE (Job Designs)
+[INFO] FALABELLA___MIDDLEWARE Codes Master
+[INFO] FALABELLA___MIDDLEWARE Routines
+[INFO] FALABELLA___MIDDLEWARE DD_ActualizarRegistroTareas (Job Designs)
 [INFO] 
 [INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA Codes Master 6.5.1
+[INFO] Building FALABELLA___MIDDLEWARE Codes Master 6.5.1
 [INFO] ------------------------------------------------------------------------
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA Routines 6.5.1
+[INFO] Building FALABELLA___MIDDLEWARE Routines 6.5.1
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ routines ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 62 resources
+[INFO] Copying 45 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ routines ---
 [INFO] Nothing to compile - all classes are up to date
@@ -41,152 +37,36 @@
 [INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\routines-6.5.1.jar
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA DORE_Barras (Job Designs) 0.2.0
+[INFO] Building FALABELLA___MIDDLEWARE DD_ActualizarRegistroTareas (Job Designs) 0.1.0
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ DORE_Barras ---
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ DD_ActualizarRegistroTareas ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 0 resource
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DORE_Barras ---
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DD_ActualizarRegistroTareas ---
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ DORE_Barras ---
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ DD_ActualizarRegistroTareas ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 4 resources
+[INFO] Copying 3 resources
 [INFO] skip non existing resourceDirectory C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\src\main\resources\metadata\survivorship
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ DORE_Barras ---
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ DD_ActualizarRegistroTareas ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 0 resource
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ DORE_Barras ---
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ DD_ActualizarRegistroTareas ---
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DORE_Barras ---
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DD_ActualizarRegistroTareas ---
 [INFO] Tests are skipped.
 [INFO] 
-[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ DORE_Barras ---
-[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dore_barras_0_2.jar
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA DORE_Coladas (Job Designs) 0.1.0
-[INFO] ------------------------------------------------------------------------
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ DD_ActualizarRegistroTareas ---
+[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dd_actualizarregistrotareas_0_1.jar
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ DORE_Coladas ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DORE_Coladas ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ DORE_Coladas ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 4 resources
-[INFO] skip non existing resourceDirectory C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\src\main\resources\metadata\survivorship
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ DORE_Coladas ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ DORE_Coladas ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DORE_Coladas ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ DORE_Coladas ---
-[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dore_coladas_0_1.jar
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA Produccion_DORE (Job Designs) 0.1.0
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ Produccion_DORE ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ Produccion_DORE ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ Produccion_DORE ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 4 resources
-[INFO] skip non existing resourceDirectory C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\src\main\resources\metadata\survivorship
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ Produccion_DORE ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ Produccion_DORE ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Produccion_DORE ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ Produccion_DORE ---
-[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\produccion_dore_0_1.jar
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA DORE_Embarque (Job Designs) 0.2.0
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ DORE_Embarque ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DORE_Embarque ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ DORE_Embarque ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 4 resources
-[INFO] skip non existing resourceDirectory C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\src\main\resources\metadata\survivorship
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ DORE_Embarque ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ DORE_Embarque ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DORE_Embarque ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ DORE_Embarque ---
-[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dore_embarque_0_2.jar
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building GESTION_FLORIDA DORE (Job Designs) 0.1.0
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ DORE ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DORE ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ DORE ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 4 resources
-[INFO] skip non existing resourceDirectory C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\src\main\resources\metadata\survivorship
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ DORE ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ DORE ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DORE ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ DORE ---
-[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dore_0_1.jar
-[INFO] 
-[INFO] --- maven-assembly-plugin:2.5.5:single (default) @ DORE ---
-[INFO] Reading assembly descriptor: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java/src/main/assemblies/assembly_DORE_0.1.xml
+[INFO] --- maven-assembly-plugin:2.5.5:single (default) @ DD_ActualizarRegistroTareas ---
+[INFO] Reading assembly descriptor: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java/src/main/assemblies/assembly_DD_ActualizarRegistroTareas_0.1.xml
 [WARNING] includeSubModules == false is incompatible with useAllReactorProjects. Ignoring.
 
 To refactor, remove the <includeSubModules/> flag, and use the <includes/> and <excludes/> sections to fine-tune the modules included.
@@ -196,21 +76,20 @@ To refactor, remove the <includeSubModules/> flag, and use the <includes/> and <
 [WARNING] The following patterns were never triggered in this artifact inclusion filter:
 o  '${pigudfs.binaries.includes.set}'
 
-[INFO] Building zip: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dore_0_1.zip
+[WARNING] The following patterns were never triggered in this artifact exclusion filter:
+o  'org.talend.job.falabella___middleware:*'
+
+[INFO] Building zip: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dd_actualizarregistrotareas_0_1.zip
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] GESTION_FLORIDA Codes Master ...................... SUCCESS [  0.003 s]
-[INFO] GESTION_FLORIDA Routines .......................... SUCCESS [  5.571 s]
-[INFO] GESTION_FLORIDA DORE_Barras (Job Designs) ......... SUCCESS [  0.322 s]
-[INFO] GESTION_FLORIDA DORE_Coladas (Job Designs) ........ SUCCESS [  0.131 s]
-[INFO] GESTION_FLORIDA Produccion_DORE (Job Designs) ..... SUCCESS [  0.127 s]
-[INFO] GESTION_FLORIDA DORE_Embarque (Job Designs) ....... SUCCESS [  0.142 s]
-[INFO] GESTION_FLORIDA DORE (Job Designs) ................ SUCCESS [  3.952 s]
+[INFO] FALABELLA___MIDDLEWARE Codes Master ............... SUCCESS [  0.004 s]
+[INFO] FALABELLA___MIDDLEWARE Routines ................... SUCCESS [  2.521 s]
+[INFO] FALABELLA___MIDDLEWARE DD_ActualizarRegistroTareas (Job Designs)  SUCCESS [  4.510 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.436 s
-[INFO] Finished at: 2018-08-23T14:13:44-04:00
-[INFO] Final Memory: 11M/187M
+[INFO] Total time: 7.185 s
+[INFO] Finished at: 2018-09-26T12:14:10-04:00
+[INFO] Final Memory: 11M/218M
 [INFO] ------------------------------------------------------------------------
