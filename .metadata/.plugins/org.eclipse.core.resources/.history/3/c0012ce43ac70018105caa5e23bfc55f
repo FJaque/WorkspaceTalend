@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Desa" jobType="Standard">
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLProductosCargados" prompt="XMLProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelExportacion" prompt="ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelRechazados" prompt="ExcelRechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLDDRegistrosCargados" prompt="XMLDDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Día a día/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow&quot;"/>
+    <contextParameter comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow&quot;"/>
+    <contextParameter comment="" name="XMLProgramacion" prompt="XMLProgramacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Día a día/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="XMLFlagFoto" prompt="XMLFlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelLogCreados" prompt="ExcelLogCreados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="SalidaCSV" prompt="SalidaCSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_Directory" value="C:/BackSpace/Falabella/Dia a dia/"/>
+    <contextParameter comment="" name="XMLPais" prompt="XMLPais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLTempAgrupado" prompt="XMLTempAgrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelLogFallidos" prompt="ExcelLogFallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelLogXML" prompt="ExcelLogXML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLProductosCargados" prompt="XMLProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelExportacion" prompt="ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelRechazados" prompt="ExcelRechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLDDRegistrosCargados" prompt="XMLDDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Dia a dia/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-test&quot;"/>
+    <contextParameter comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;test-workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-test&quot;"/>
+    <contextParameter comment="" name="XMLProgramacion" prompt="XMLProgramacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Dia a dia/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="XMLFlagFoto" prompt="XMLFlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelLogCreados" prompt="ExcelLogCreados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="SalidaCSV" prompt="SalidaCSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_Directory" value="C:/BackSpace/Falabella/Dia a dia/"/>
+    <contextParameter comment="" name="XMLPais" prompt="XMLPais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="XMLTempAgrupado" prompt="XMLTempAgrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelLogFallidos" prompt="ExcelLogFallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelLogXML" prompt="ExcelLogXML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Desa">
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Carga casos v3.xlsx"/>
+    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML P_TipoOrigen.xml"/>
+    <contextParameter comment="" name="XMLProductosCargados" prompt="XMLProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML M_ProductosCargados.xml"/>
+    <contextParameter comment="" name="ExcelExportacion" prompt="ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Casos exportación.xlsx"/>
+    <contextParameter comment="" name="ExcelRechazados" prompt="ExcelRechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Rechazados.xlsx"/>
+    <contextParameter comment="" name="XMLDDRegistrosCargados" prompt="XMLDDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Día a día/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+    <contextParameter comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="" name="XMLProgramacion" prompt="XMLProgramacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Día a día/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="XMLFlagFoto" prompt="XMLFlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML P_FlagFoto.xml"/>
+    <contextParameter comment="" name="ExcelLogCreados" prompt="ExcelLogCreados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/LogCasosCreados.xlsx"/>
+    <contextParameter comment="" name="SalidaCSV" prompt="SalidaCSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_Directory" value="C:/BackSpace/Falabella/Dia a dia/"/>
+    <contextParameter comment="" name="XMLPais" prompt="XMLPais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML P_Pais.xml"/>
+    <contextParameter comment="" name="XMLTempAgrupado" prompt="XMLTempAgrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML Temp URL Foto.xml"/>
+    <contextParameter comment="" name="ExcelLogFallidos" prompt="ExcelLogFallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/LogCasosFallidos.xlsx"/>
+    <contextParameter comment="" name="ExcelLogXML" prompt="ExcelLogXML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/LogXML.xlsx"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/BackSpace/Programas/TOS_DI-20180116_1512-V6.5.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_cN4NEIagEeioo_5pyUlH2Q" name="DataOperation"/>
+    <routinesParameter id="_cPKmgIagEeioo_5pyUlH2Q" name="Mathematical"/>
+    <routinesParameter id="_cPUXgIagEeioo_5pyUlH2Q" name="Numeric"/>
+    <routinesParameter id="_cPfWoIagEeioo_5pyUlH2Q" name="Relational"/>
+    <routinesParameter id="_cPkPIIagEeioo_5pyUlH2Q" name="StringHandling"/>
+    <routinesParameter id="_cPyRkIagEeioo_5pyUlH2Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_cP_F4IagEeioo_5pyUlH2Q" name="TalendDate"/>
+    <routinesParameter id="_cQajsIagEeioo_5pyUlH2Q" name="TalendStringUtil"/>
+    <routinesParameter id="_cQNIUIagEeioo_5pyUlH2Q" name="TalendString"/>
+    <routinesParameter id="_OhGfMMNVEeiDSZdpf9dBNA" name="FormatearFecha"/>
+  </parameters>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" value="&quot;192.168.0.100&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;http://34.196.15.115/Marketing/webservices/entitymanagersoa.asmx&quot;"/>
+    <elementParameter field="TEXT" name="ACTION" value="&quot;http://tempuri.org/getEntitiesUsingSchema&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" value="" show="false"/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?>&#xD;&#xA;&lt;soapenv:Envelope xmlns:soapenv=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; &#xD;&#xA;&#x9;xmlns:tem=\&quot;http://tempuri.org/\&quot;>&#xD;&#xA;   &lt;soapenv:Header/>&#xD;&#xA;   &lt;soapenv:Body>&#xD;&#xA;      &lt;tem:getEntitiesUsingSchema>&#xD;&#xA;         &lt;tem:entitiesInfo>&#xD;&#xA;            &lt;BizAgiWSParam>&#xD;&#xA;                    &lt;EntityData>&#xD;&#xA;                        &lt;EntityName>M_DDRegistroTareas&lt;/EntityName>&#xD;&#xA;                        &lt;Filters>&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/Filters>&#xD;&#xA;                    &lt;/EntityData>&#xD;&#xA;                &lt;/BizAgiWSParam>&#xD;&#xA;         &lt;/tem:entitiesInfo>&#xD;&#xA;         &lt;tem:schema>&#xD;&#xA;           &lt;xs:schema attributeFormDefault=\&quot;qualified\&quot; elementFormDefault=\&quot;qualified\&quot; &#xD;&#xA;&#x9;&#x9;   xmlns:xs=\&quot;http://www.w3.org/2001/XMLSchema\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDRegistroTareas\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Tarea\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDProgramacion\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumerodelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechayHoradePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDTodoLoDemas\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumerodeCaso\&quot; type=\&quot;xs:long\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechadePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDPiezasGraficas\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCambio\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumeroDeCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;idDiseno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Flujo\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCierreExterno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDProgramacion\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumerodelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechayHoradePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_Contingencias\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Caso\&quot; type=\&quot;xs:long\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;idDiseno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Flujo\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechadePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;TiempodeDiseno\&quot; type=\&quot;xs:int\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumeroCasoPieza\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCambio\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;CerradoExternamente\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCierreExterno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:attribute name=\&quot;key\&quot; type=\&quot;xs:int\&quot;>&lt;/xs:attribute>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/xs:schema>&#xD;&#xA;         &lt;/tem:schema>&#xD;&#xA;      &lt;/tem:getEntitiesUsingSchema>&#xD;&#xA;   &lt;/soapenv:Body>&#xD;&#xA;&lt;/soapenv:Envelope>&quot;"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="true"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="On Premise Get Entities"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_1">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Extraer datos relevantes"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="formateado" name="formateado">
+      <column comment="" key="false" length="-1" name="Fuente" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Proceso" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tarea" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumerodelCaso" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="idDiseno" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flujo" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaPublicacion" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreaciondelCaso" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroCasoPieza" nullable="true" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TiempodeDiseno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCambio" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CerradoExternamente" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCierreExterno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Soap" expression="" type="id_Document" xpath="row2/Soap">
+          <children name="soap:Envelope" type="id_String" xpath="row2.Soap:/soap:Envelope" main="true">
+            <children name="soap:Body" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body" main="true">
+              <children name="getEntitiesUsingSchemaResponse" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse" main="true">
+                <children name="getEntitiesUsingSchemaResult" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult" main="true">
+                  <children name="BizAgiWSResponse" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse" main="true">
+                    <children name="Entities" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities" main="true">
+                      <children name="M_DDRegistroTareas" expression="" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas" loop="true" main="true">
+                        <children name="key" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.33" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/@key" nodeType="ATTRIBUT"/>
+                        <children name="M_DDProgramacion" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion">
+                          <children name="entityName" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/@key" nodeType="ATTRIBUT"/>
+                          <children name="NumerodelCaso" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.12" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/NumerodelCaso"/>
+                          <children name="FechayHoradePublicacion" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.19 //@node.1/@nodeData/@connections.38" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.35" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy&quot;"/>
+                        </children>
+                        <children name="M_DDTodoLoDemas" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas">
+                          <children name="entityName" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/@key" nodeType="ATTRIBUT"/>
+                          <children name="NumerodeCaso" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.11" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/NumerodeCaso"/>
+                          <children name="FechadePublicacion" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.20 //@node.1/@nodeData/@connections.37" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.23" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy&quot;"/>
+                        </children>
+                        <children name="M_DDPiezasGraficas" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas">
+                          <children name="entityName" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/@key" nodeType="ATTRIBUT"/>
+                          <children name="MotivoCambio" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.29" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCambio"/>
+                          <children name="NumeroDeCaso" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.13" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso"/>
+                          <children name="idDiseno" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.16" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/idDiseno"/>
+                          <children name="Flujo" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.17" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/Flujo"/>
+                          <children name="MotivoCierreExterno" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.31" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCierreExterno"/>
+                          <children name="M_DDProgramacion" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion">
+                            <children name="entityName" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/@entityName" nodeType="ATTRIBUT"/>
+                            <children name="key" type="id_Integer" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/@key" nodeType="ATTRIBUT"/>
+                            <children name="NumerodelCaso" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/NumerodelCaso"/>
+                            <children name="FechayHoradePublicacion" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.21 //@node.1/@nodeData/@connections.40" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion"/>
+                            <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.25" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechaCreaciondelCaso"/>
+                          </children>
+                        </children>
+                        <children name="M_Contingencias" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias">
+                          <children name="entityName" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/@key" nodeType="ATTRIBUT"/>
+                          <children name="Caso" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.14" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Caso"/>
+                          <children name="idDiseno" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.15" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/idDiseno"/>
+                          <children name="Flujo" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.18" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Flujo"/>
+                          <children name="FechadePublicacion" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.22 //@node.1/@nodeData/@connections.39" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.24" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="TiempodeDiseno" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.27" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/TiempodeDiseno"/>
+                          <children name="NumeroCasoPieza" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.26" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/NumeroCasoPieza"/>
+                          <children name="MotivoCambio" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.28" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCambio"/>
+                          <children name="CerradoExternamente" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.30" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/CerradoExternamente"/>
+                          <children name="MotivoCierreExterno" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.32" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCierreExterno"/>
+                        </children>
+                        <children name="Tarea" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.34" xpath="row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/Tarea"/>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees expressionFilter="Var.NumerodelCaso != 0" activateExpressionFilter="true" name="formateado" filterIncomingConnections="//@node.1/@nodeData/@connections.10">
+        <nodes name="Fuente" expression="Var.Fuente" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.36" xpath="formateado/Fuente"/>
+        <nodes name="Proceso" expression="Var.Proceso" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.41" xpath="formateado/Proceso"/>
+        <nodes name="key" expression=" [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/@key]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.33" xpath="formateado/key"/>
+        <nodes name="Tarea" expression=" [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/Tarea]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.34" xpath="formateado/Tarea"/>
+        <nodes name="NumerodelCaso" expression="Var.NumerodelCaso" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="formateado/NumerodelCaso"/>
+        <nodes name="idDiseno" expression="Var.idDiseno" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="formateado/idDiseno"/>
+        <nodes name="Flujo" expression="Var.Flujo" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="formateado/Flujo"/>
+        <nodes name="FechaPublicacion" expression="FormatearFecha.recortarFecha(Var.FechaPublicacion) " type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="formateado/FechaPublicacion" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;"/>
+        <nodes name="FechaCreaciondelCaso" expression="FormatearFecha.recortarFecha(Var.FechaCreaciondelCaso) " type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="formateado/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;"/>
+        <nodes name="NumeroCasoPieza" expression="Var.NumeroCasoPieza" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="formateado/NumeroCasoPieza"/>
+        <nodes name="TiempodeDiseno" expression="Var.TiempodeDiseno" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="formateado/TiempodeDiseno"/>
+        <nodes name="MotivoCambio" expression="Var.MotivoCambio" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="formateado/MotivoCambio"/>
+        <nodes name="CerradoExternamente" expression="Var.CerradoExternamente" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="formateado/CerradoExternamente"/>
+        <nodes name="MotivoCierreExterno" expression="Var.MotivoCierreExterno" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="formateado/MotivoCierreExterno"/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes name="NumerodelCaso" expression="// Todo lo demás&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/NumerodeCaso] != null&#xD;&#xA;? &#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/NumerodeCaso]&#xD;&#xA;:&#xD;&#xA;0)&#xD;&#xA;+&#xD;&#xA;// Programación&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/NumerodelCaso] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/NumerodelCaso]&#xD;&#xA;:&#xD;&#xA;0)&#xD;&#xA;+&#xD;&#xA;// Piezas gráficas&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso] != null &amp;&amp; ![row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso].equals(&quot;&quot;)&#xD;&#xA;?&#xD;&#xA;Integer.parseInt([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso])&#xD;&#xA;:&#xD;&#xA;0)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Caso] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Caso]&#xD;&#xA;:&#xD;&#xA;0) " type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.0" incomingConnections="//@node.1/@nodeData/@connections.11 //@node.1/@nodeData/@connections.12 //@node.1/@nodeData/@connections.13 //@node.1/@nodeData/@connections.14" filterOutGoingConnections="//@node.1/@nodeData/@connections.10"/>
+        <nodes name="idDiseno" expression="// Piezas gráficas&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/idDiseno] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/idDiseno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/idDiseno] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/idDiseno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" incomingConnections="//@node.1/@nodeData/@connections.15 //@node.1/@nodeData/@connections.16" nullable="true"/>
+        <nodes name="Flujo" expression="// Piezas gráficas&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/Flujo] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/Flujo]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Flujo] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Flujo]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) &#xD;&#xA;+&#xD;&#xA;// Programacion&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/Flujo] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/Flujo]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" incomingConnections="//@node.1/@nodeData/@connections.17 //@node.1/@nodeData/@connections.18" nullable="true"/>
+        <nodes name="FechaPublicacion" expression="// Todo lo demás&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion]  != null)&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion] &#xD;&#xA;:&#xD;&#xA;(&#xD;&#xA;    // Programación&#xD;&#xA;    ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;    ?&#xD;&#xA;    [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion] &#xD;&#xA;    :&#xD;&#xA;    (&#xD;&#xA;        // Contingencias&#xD;&#xA;        ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion] != null)&#xD;&#xA;        ?&#xD;&#xA;        [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion]&#xD;&#xA;        :&#xD;&#xA;        (&#xD;&#xA;            // Piezas gráficas&#xD;&#xA;            ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;            ?&#xD;&#xA;            [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion] &#xD;&#xA;            :&#xD;&#xA;            null&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" incomingConnections="//@node.1/@nodeData/@connections.19 //@node.1/@nodeData/@connections.20 //@node.1/@nodeData/@connections.21 //@node.1/@nodeData/@connections.22" nullable="true"/>
+        <nodes name="FechaCreaciondelCaso" expression="// Todo lo demás&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechaCreaciondelCaso] != null)&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechaCreaciondelCaso]&#xD;&#xA;:&#xD;&#xA;(&#xD;&#xA;    // Programación&#xD;&#xA;    ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechaCreaciondelCaso] != null)&#xD;&#xA;    ?&#xD;&#xA;&#x9;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechaCreaciondelCaso]&#xD;&#xA;    :&#xD;&#xA;    (&#xD;&#xA;        // Contingencias&#xD;&#xA;        ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechaCreaciondelCaso] != null)&#xD;&#xA;        ?&#xD;&#xA;        [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechaCreaciondelCaso]&#xD;&#xA;        :&#xD;&#xA;        (&#xD;&#xA;            // Piezas gráficas&#xD;&#xA;            ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechaCreaciondelCaso] != null)&#xD;&#xA;            ?&#xD;&#xA;            [row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechaCreaciondelCaso]&#xD;&#xA;            :&#xD;&#xA;            null&#xD;&#xA;        )&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;        &#xD;&#xA;    )&#xD;&#xA;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" incomingConnections="//@node.1/@nodeData/@connections.23 //@node.1/@nodeData/@connections.24 //@node.1/@nodeData/@connections.25 //@node.1/@nodeData/@connections.35" nullable="true"/>
+        <nodes name="NumeroCasoPieza" expression="[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/NumeroCasoPieza] " type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.5" incomingConnections="//@node.1/@nodeData/@connections.26" nullable="true"/>
+        <nodes name="TiempodeDiseno" expression="[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/TiempodeDiseno] " type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.6" incomingConnections="//@node.1/@nodeData/@connections.27" nullable="true"/>
+        <nodes name="MotivoCambio" expression="// Piezas gráficas&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCambio] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCambio]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCambio] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCambio]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.7" incomingConnections="//@node.1/@nodeData/@connections.28 //@node.1/@nodeData/@connections.29" nullable="true"/>
+        <nodes name="CerradoExternamente" expression="[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/CerradoExternamente] " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8" incomingConnections="//@node.1/@nodeData/@connections.30" nullable="true"/>
+        <nodes name="MotivoCierreExterno" expression="// Piezas gráficas&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCierreExterno] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCierreExterno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCierreExterno] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCierreExterno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.9" incomingConnections="//@node.1/@nodeData/@connections.31 //@node.1/@nodeData/@connections.32" nullable="true"/>
+        <nodes name="Fuente" expression="&quot;On Premise&quot;" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.36"/>
+        <nodes name="Proceso" expression="// Todo lo demás&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion]  != null)&#xD;&#xA;?&#xD;&#xA;&quot;Todo lo demas&quot;&#xD;&#xA;:&#xD;&#xA;(&#xD;&#xA;    // Programación&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;    ?&#xD;&#xA;    &quot;Programacion&quot;&#xD;&#xA;    :&#xD;&#xA;    (&#xD;&#xA;        // Contingencias&#xD;&#xA;   ([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion] != null)&#xD;&#xA;        ?&#xD;&#xA;&#x9;&#x9;&quot;Contingencias&quot;&#xD;&#xA;        :&#xD;&#xA;        (&#xD;&#xA;            // Piezas gráficas&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;            ?&#xD;&#xA;            &quot;Piezas graficas&quot; &#xD;&#xA;            :&#xD;&#xA;            null&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;) " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.41" incomingConnections="//@node.1/@nodeData/@connections.37 //@node.1/@nodeData/@connections.38 //@node.1/@nodeData/@connections.39 //@node.1/@nodeData/@connections.40" nullable="true"/>
+      </varTables>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.1/@nodeData/@varTables.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.2" target="//@node.1/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.2" target="//@node.1/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.2" target="//@node.1/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.4" target="//@node.1/@nodeData/@varTables.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.5" target="//@node.1/@nodeData/@varTables.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.4" target="//@node.1/@nodeData/@varTables.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.7/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.5" target="//@node.1/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.4" target="//@node.1/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.6" target="//@node.1/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.7/@children.4" target="//@node.1/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.8" target="//@node.1/@nodeData/@varTables.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.7" target="//@node.1/@nodeData/@varTables.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.9" target="//@node.1/@nodeData/@varTables.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.2" target="//@node.1/@nodeData/@varTables.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.10" target="//@node.1/@nodeData/@varTables.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.6" target="//@node.1/@nodeData/@varTables.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.11" target="//@node.1/@nodeData/@varTables.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.4" target="//@node.1/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.5" target="//@node.1/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.7/@children.3" target="//@node.1/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fuente"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Proceso"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tarea"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumerodelCaso"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idDiseno"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Flujo"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaPublicacion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaCreaciondelCaso"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumeroCasoPieza"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TiempodeDiseno"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MotivoCambio"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CerradoExternamente"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MotivoCierreExterno"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log filas a enviar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="formateado" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="Fuente" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Proceso" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tarea" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumerodelCaso" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="idDiseno" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flujo" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaPublicacion" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreaciondelCaso" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroCasoPieza" nullable="true" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TiempodeDiseno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCambio" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CerradoExternamente" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCierreExterno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.SalidaCSV + &quot;/Salida.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="formateado" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="Fuente" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Proceso" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tarea" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumerodelCaso" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="idDiseno" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flujo" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaPublicacion" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreaciondelCaso" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroCasoPieza" nullable="true" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TiempodeDiseno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCambio" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CerradoExternamente" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCierreExterno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" value="&quot;192.168.0.100&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://&quot;+context.BIZhost+&quot;/&quot;+context.BIZprocesoDD+&quot;/webservices/entitymanagersoa.asmx&quot;"/>
+    <elementParameter field="TEXT" name="ACTION" value="&quot;http://tempuri.org/getEntitiesUsingSchema&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" value="" show="false"/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?>&#xD;&#xA;&lt;soapenv:Envelope xmlns:soapenv=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; &#xD;&#xA;&#x9;xmlns:tem=\&quot;http://tempuri.org/\&quot;>&#xD;&#xA;   &lt;soapenv:Header/>&#xD;&#xA;   &lt;soapenv:Body>&#xD;&#xA;      &lt;tem:getEntitiesUsingSchema>&#xD;&#xA;         &lt;tem:entitiesInfo>&#xD;&#xA;            &lt;BizAgiWSParam>&#xD;&#xA;                    &lt;EntityData>&#xD;&#xA;                        &lt;EntityName>M_DDRegistroTareas&lt;/EntityName>&#xD;&#xA;                        &lt;Filters>&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/Filters>&#xD;&#xA;                    &lt;/EntityData>&#xD;&#xA;                &lt;/BizAgiWSParam>&#xD;&#xA;         &lt;/tem:entitiesInfo>&#xD;&#xA;         &lt;tem:schema>&#xD;&#xA;           &lt;xs:schema attributeFormDefault=\&quot;qualified\&quot; elementFormDefault=\&quot;qualified\&quot; &#xD;&#xA;&#x9;&#x9;   xmlns:xs=\&quot;http://www.w3.org/2001/XMLSchema\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDRegistroTareas\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Tarea\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDProgramacion\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumerodelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechayHoradePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDTodoLoDemas\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumerodeCaso\&quot; type=\&quot;xs:long\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechadePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDPiezasGraficas\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCambio\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumeroDeCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;idDiseno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Flujo\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCierreExterno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_DDProgramacion\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumerodelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechayHoradePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_Contingencias\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Caso\&quot; type=\&quot;xs:long\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;idDiseno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;Flujo\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechadePublicacion\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaCreaciondelCaso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;TiempodeDiseno\&quot; type=\&quot;xs:int\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;NumeroCasoPieza\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCambio\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;CerradoExternamente\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;MotivoCierreExterno\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:attribute name=\&quot;key\&quot; type=\&quot;xs:int\&quot;>&lt;/xs:attribute>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/xs:schema>&#xD;&#xA;         &lt;/tem:schema>&#xD;&#xA;      &lt;/tem:getEntitiesUsingSchema>&#xD;&#xA;   &lt;/soapenv:Body>&#xD;&#xA;&lt;/soapenv:Envelope>&quot;"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="true"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cloud Get Entities"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_2">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Extraer datos relevantes"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="formateado" name="copyOfformateado">
+      <column comment="" key="false" length="-1" name="Fuente" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Proceso" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tarea" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumerodelCaso" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="idDiseno" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flujo" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaPublicacion" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreaciondelCaso" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroCasoPieza" nullable="true" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TiempodeDiseno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCambio" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CerradoExternamente" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCierreExterno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Soap" expression="" type="id_Document" xpath="row3/Soap">
+          <children name="soap:Envelope" type="id_String" xpath="row3.Soap:/soap:Envelope" main="true">
+            <children name="soap:Body" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body" main="true">
+              <children name="getEntitiesUsingSchemaResponse" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse" main="true">
+                <children name="getEntitiesUsingSchemaResult" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult" main="true">
+                  <children name="BizAgiWSResponse" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse" main="true">
+                    <children name="Entities" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities" main="true">
+                      <children name="M_DDRegistroTareas" expression="" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas" loop="true" main="true">
+                        <children name="key" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.33" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/@key" nodeType="ATTRIBUT"/>
+                        <children name="M_DDProgramacion" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion">
+                          <children name="entityName" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/@key" nodeType="ATTRIBUT"/>
+                          <children name="NumerodelCaso" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.12" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/NumerodelCaso"/>
+                          <children name="FechayHoradePublicacion" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.19 //@node.5/@nodeData/@connections.38" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.35" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy&quot;"/>
+                        </children>
+                        <children name="M_DDTodoLoDemas" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas">
+                          <children name="entityName" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/@key" nodeType="ATTRIBUT"/>
+                          <children name="NumerodeCaso" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.11" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/NumerodeCaso"/>
+                          <children name="FechadePublicacion" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.20 //@node.5/@nodeData/@connections.37" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.23" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy&quot;"/>
+                        </children>
+                        <children name="M_DDPiezasGraficas" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas">
+                          <children name="entityName" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/@key" nodeType="ATTRIBUT"/>
+                          <children name="MotivoCambio" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.29" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCambio"/>
+                          <children name="NumeroDeCaso" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.13" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso"/>
+                          <children name="idDiseno" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.16" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/idDiseno"/>
+                          <children name="Flujo" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.17" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/Flujo"/>
+                          <children name="MotivoCierreExterno" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.31" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCierreExterno"/>
+                          <children name="M_DDProgramacion" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion">
+                            <children name="entityName" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/@entityName" nodeType="ATTRIBUT"/>
+                            <children name="key" type="id_Integer" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/@key" nodeType="ATTRIBUT"/>
+                            <children name="NumerodelCaso" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/NumerodelCaso"/>
+                            <children name="FechayHoradePublicacion" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.21 //@node.5/@nodeData/@connections.40" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion"/>
+                            <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.25" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechaCreaciondelCaso"/>
+                          </children>
+                        </children>
+                        <children name="M_Contingencias" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias">
+                          <children name="entityName" type="id_String" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/@entityName" nodeType="ATTRIBUT"/>
+                          <children name="key" type="id_Integer" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/@key" nodeType="ATTRIBUT"/>
+                          <children name="Caso" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.14" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Caso"/>
+                          <children name="idDiseno" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.15" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/idDiseno"/>
+                          <children name="Flujo" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.18" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Flujo"/>
+                          <children name="FechadePublicacion" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.22 //@node.5/@nodeData/@connections.39" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="FechaCreaciondelCaso" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.24" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy&quot;"/>
+                          <children name="TiempodeDiseno" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.27" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/TiempodeDiseno"/>
+                          <children name="NumeroCasoPieza" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.26" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/NumeroCasoPieza"/>
+                          <children name="MotivoCambio" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.28" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCambio"/>
+                          <children name="CerradoExternamente" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.30" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/CerradoExternamente"/>
+                          <children name="MotivoCierreExterno" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.32" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCierreExterno"/>
+                        </children>
+                        <children name="Tarea" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.34" xpath="row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/Tarea"/>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees expressionFilter="Var.NumerodelCaso != 0" activateExpressionFilter="true" name="copyOfformateado" filterIncomingConnections="//@node.5/@nodeData/@connections.10">
+        <nodes name="Fuente" expression="Var.Fuente" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.36" xpath="copyOfformateado/Fuente"/>
+        <nodes name="Proceso" expression="Var.Proceso" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.41" xpath="copyOfformateado/Proceso"/>
+        <nodes name="key" expression=" [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/@key]" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.33" xpath="copyOfformateado/key"/>
+        <nodes name="Tarea" expression=" [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/Tarea]" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.34" xpath="copyOfformateado/Tarea"/>
+        <nodes name="NumerodelCaso" expression="Var.NumerodelCaso" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="copyOfformateado/NumerodelCaso"/>
+        <nodes name="idDiseno" expression="Var.idDiseno" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.1" xpath="copyOfformateado/idDiseno"/>
+        <nodes name="Flujo" expression="Var.Flujo" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="copyOfformateado/Flujo"/>
+        <nodes name="FechaPublicacion" expression="FormatearFecha.recortarFecha(Var.FechaPublicacion) " type="id_Date" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="copyOfformateado/FechaPublicacion" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;"/>
+        <nodes name="FechaCreaciondelCaso" expression="FormatearFecha.recortarFecha(Var.FechaCreaciondelCaso) " type="id_Date" incomingConnections="//@node.5/@nodeData/@connections.4" xpath="copyOfformateado/FechaCreaciondelCaso" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;"/>
+        <nodes name="NumeroCasoPieza" expression="Var.NumeroCasoPieza" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.5" xpath="copyOfformateado/NumeroCasoPieza"/>
+        <nodes name="TiempodeDiseno" expression="Var.TiempodeDiseno" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.6" xpath="copyOfformateado/TiempodeDiseno"/>
+        <nodes name="MotivoCambio" expression="Var.MotivoCambio" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.7" xpath="copyOfformateado/MotivoCambio"/>
+        <nodes name="CerradoExternamente" expression="Var.CerradoExternamente" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.8" xpath="copyOfformateado/CerradoExternamente"/>
+        <nodes name="MotivoCierreExterno" expression="Var.MotivoCierreExterno" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.9" xpath="copyOfformateado/MotivoCierreExterno"/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes name="NumerodelCaso" expression="// Todo lo demás&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/NumerodeCaso] != null&#xD;&#xA;? &#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/NumerodeCaso]&#xD;&#xA;:&#xD;&#xA;0)&#xD;&#xA;+&#xD;&#xA;// Programación&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/NumerodelCaso] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/NumerodelCaso]&#xD;&#xA;:&#xD;&#xA;0)&#xD;&#xA;+&#xD;&#xA;// Piezas gráficas&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso] != null &amp;&amp; ![row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso].equals(&quot;&quot;)&#xD;&#xA;?&#xD;&#xA;Integer.parseInt([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/NumeroDeCaso])&#xD;&#xA;:&#xD;&#xA;0)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Caso] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Caso]&#xD;&#xA;:&#xD;&#xA;0) " type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.0" incomingConnections="//@node.5/@nodeData/@connections.11 //@node.5/@nodeData/@connections.12 //@node.5/@nodeData/@connections.13 //@node.5/@nodeData/@connections.14" filterOutGoingConnections="//@node.5/@nodeData/@connections.10"/>
+        <nodes name="idDiseno" expression="// Piezas gráficas&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/idDiseno] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/idDiseno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/idDiseno] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/idDiseno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.1" incomingConnections="//@node.5/@nodeData/@connections.15 //@node.5/@nodeData/@connections.16" nullable="true"/>
+        <nodes name="Flujo" expression="// Piezas gráficas&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/Flujo] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/Flujo]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Flujo] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/Flujo]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) &#xD;&#xA;+&#xD;&#xA;// Programacion&#xD;&#xA;([row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/Flujo] != null&#xD;&#xA;?&#xD;&#xA;[row2.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/Flujo]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.2" incomingConnections="//@node.5/@nodeData/@connections.17 //@node.5/@nodeData/@connections.18" nullable="true"/>
+        <nodes name="FechaPublicacion" expression="// Todo lo demás&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion]  != null)&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion] &#xD;&#xA;:&#xD;&#xA;(&#xD;&#xA;    // Programación&#xD;&#xA;    ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;    ?&#xD;&#xA;    [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion] &#xD;&#xA;    :&#xD;&#xA;    (&#xD;&#xA;        // Contingencias&#xD;&#xA;        ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion] != null)&#xD;&#xA;        ?&#xD;&#xA;        [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion]&#xD;&#xA;        :&#xD;&#xA;        (&#xD;&#xA;            // Piezas gráficas&#xD;&#xA;            ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;            ?&#xD;&#xA;            [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion] &#xD;&#xA;            :&#xD;&#xA;            null&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.3" incomingConnections="//@node.5/@nodeData/@connections.19 //@node.5/@nodeData/@connections.20 //@node.5/@nodeData/@connections.21 //@node.5/@nodeData/@connections.22" nullable="true"/>
+        <nodes name="FechaCreaciondelCaso" expression="// Todo lo demás&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechaCreaciondelCaso] != null)&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechaCreaciondelCaso]&#xD;&#xA;:&#xD;&#xA;(&#xD;&#xA;    // Programación&#xD;&#xA;    ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechaCreaciondelCaso] != null)&#xD;&#xA;    ?&#xD;&#xA;&#x9;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechaCreaciondelCaso]&#xD;&#xA;    :&#xD;&#xA;    (&#xD;&#xA;        // Contingencias&#xD;&#xA;        ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechaCreaciondelCaso] != null)&#xD;&#xA;        ?&#xD;&#xA;        [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechaCreaciondelCaso]&#xD;&#xA;        :&#xD;&#xA;        (&#xD;&#xA;            // Piezas gráficas&#xD;&#xA;            ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechaCreaciondelCaso] != null)&#xD;&#xA;            ?&#xD;&#xA;            [row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechaCreaciondelCaso]&#xD;&#xA;            :&#xD;&#xA;            null&#xD;&#xA;        )&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;        &#xD;&#xA;    )&#xD;&#xA;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.4" incomingConnections="//@node.5/@nodeData/@connections.23 //@node.5/@nodeData/@connections.24 //@node.5/@nodeData/@connections.25 //@node.5/@nodeData/@connections.35" nullable="true"/>
+        <nodes name="NumeroCasoPieza" expression="[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/NumeroCasoPieza] " type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.5" incomingConnections="//@node.5/@nodeData/@connections.26" nullable="true"/>
+        <nodes name="TiempodeDiseno" expression="[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/TiempodeDiseno] " type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.6" incomingConnections="//@node.5/@nodeData/@connections.27" nullable="true"/>
+        <nodes name="MotivoCambio" expression="// Piezas gráficas&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCambio] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCambio]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCambio] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCambio]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.7" incomingConnections="//@node.5/@nodeData/@connections.28 //@node.5/@nodeData/@connections.29" nullable="true"/>
+        <nodes name="CerradoExternamente" expression="[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/CerradoExternamente] " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.8" incomingConnections="//@node.5/@nodeData/@connections.30" nullable="true"/>
+        <nodes name="MotivoCierreExterno" expression="// Piezas gráficas&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCierreExterno] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/MotivoCierreExterno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;)&#xD;&#xA;+&#xD;&#xA;// Contingencia&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCierreExterno] != null&#xD;&#xA;?&#xD;&#xA;[row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/MotivoCierreExterno]&#xD;&#xA;:&#xD;&#xA;&quot;&quot;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.9" incomingConnections="//@node.5/@nodeData/@connections.31 //@node.5/@nodeData/@connections.32" nullable="true"/>
+        <nodes name="Fuente" expression="&quot;Cloud&quot;" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.36"/>
+        <nodes name="Proceso" expression="// Todo lo demás&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDTodoLoDemas/FechadePublicacion]  != null)&#xD;&#xA;?&#xD;&#xA;&quot;Todo lo demas&quot;&#xD;&#xA;:&#xD;&#xA;(&#xD;&#xA;    // Programación&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;    ?&#xD;&#xA;    &quot;Programacion&quot;&#xD;&#xA;    :&#xD;&#xA;    (&#xD;&#xA;        // Contingencias&#xD;&#xA;   ([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_Contingencias/FechadePublicacion] != null)&#xD;&#xA;        ?&#xD;&#xA;&#x9;&#x9;&quot;Contingencias&quot;&#xD;&#xA;        :&#xD;&#xA;        (&#xD;&#xA;            // Piezas gráficas&#xD;&#xA;([row3.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_DDRegistroTareas/M_DDPiezasGraficas/M_DDProgramacion/FechayHoradePublicacion]  != null)&#xD;&#xA;            ?&#xD;&#xA;            &quot;Piezas graficas&quot; &#xD;&#xA;            :&#xD;&#xA;            null&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;) " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.41" incomingConnections="//@node.5/@nodeData/@connections.37 //@node.5/@nodeData/@connections.38 //@node.5/@nodeData/@connections.39 //@node.5/@nodeData/@connections.40"/>
+      </varTables>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.8" target="//@node.5/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.9" target="//@node.5/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.5/@nodeData/@varTables.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.2" target="//@node.5/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.2" target="//@node.5/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.2" target="//@node.5/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.4" target="//@node.5/@nodeData/@varTables.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.5" target="//@node.5/@nodeData/@varTables.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.4" target="//@node.5/@nodeData/@varTables.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.7/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.5" target="//@node.5/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.4" target="//@node.5/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.6" target="//@node.5/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.7/@children.4" target="//@node.5/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.8" target="//@node.5/@nodeData/@varTables.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.7" target="//@node.5/@nodeData/@varTables.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.9" target="//@node.5/@nodeData/@varTables.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.2" target="//@node.5/@nodeData/@varTables.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.10" target="//@node.5/@nodeData/@varTables.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.6" target="//@node.5/@nodeData/@varTables.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.11" target="//@node.5/@nodeData/@varTables.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.4" target="//@node.5/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.10" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4/@children.5" target="//@node.5/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.7/@children.3" target="//@node.5/@nodeData/@varTables.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fuente"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Proceso"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tarea"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumerodelCaso"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="idDiseno"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Flujo"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaPublicacion"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaCreaciondelCaso"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumeroCasoPieza"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TiempodeDiseno"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MotivoCambio"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CerradoExternamente"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MotivoCierreExterno"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log filas a enviar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="formateado" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="Fuente" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Proceso" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tarea" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumerodelCaso" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="idDiseno" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flujo" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaPublicacion" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreaciondelCaso" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroCasoPieza" nullable="true" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TiempodeDiseno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCambio" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CerradoExternamente" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCierreExterno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.SalidaCSV + &quot;/Salida.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="formateado" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="-1" name="Fuente" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Proceso" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tarea" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumerodelCaso" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="idDiseno" nullable="false" pattern="" precision="-1" sourceType="id_Integer" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Flujo" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaPublicacion" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreaciondelCaso" nullable="false" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="NumeroCasoPieza" nullable="true" pattern="" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TiempodeDiseno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCambio" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CerradoExternamente" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MotivoCierreExterno" nullable="true" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSOAP_1" offsetLabelX="0" offsetLabelY="0" source="tSOAP_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="formateado" lineStyle="0" metaname="formateado" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="formateado" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tSOAP_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSOAP_2" offsetLabelX="0" offsetLabelY="0" source="tSOAP_2" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfformateado" lineStyle="0" metaname="copyOfformateado" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfformateado" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
