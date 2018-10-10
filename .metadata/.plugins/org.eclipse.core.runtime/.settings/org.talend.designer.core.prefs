@@ -1,5 +1,5 @@
 Palette.Favorite.ComponentsList=tConvertType,tLogRow,tMSSqlCommit,tMSSqlConnection,tMSSqlInput,tMSSqlOutput,tAggregateRow,tFilterRow,tMap,tReplace,tReplicate,tUnite,tExtractDelimitedFields,tSetGlobalVar,tMSSqlClose
-Palette.RecentlyUsed.ComponentsList=tFileOutputDelimited\:1538514643132,tLogRow\:1536588255678,tFilterRow\:1536588235272,tConvertType\:1536158586932,tMap\:1536156270777,tExtractXMLField\:1535740499592,tJavaRow\:1535738768252,tXMLMap\:1535727363505,tAdvancedFileOutputXML\:1535725872241,tFileInputXML\:1535481340867,tFTPConnection\:1534962019581,tReplace\:1534790670999,tRunJob\:1534256632197,tWriteXMLField\:1532535763042,tMSSqlClose\:1534191565856,tBufferOutput\:1534170161303,tJava\:1531845974708,tJavaFlex\:1524681792904,tPostjob\:1534169762948,tFileOutputExcel\:1533156619558,tSetGlobalVar\:1531845697971,tFileInputExcel\:1526053010477,tMSSqlOutput\:1531507542561,tSOAP\:1531500602742,tReplicate\:1531499633334,tMsgBox\:1524146850550,tSystem\:1525730230053,tMSSqlInput\:1525730013714,tMSSqlConnection\:1525730002847,tSortRow\:1520875211988,tAggregateRow\:1520874967219,tUnite\:1519854928177,tJoin\:1519851037025,tRowGenerator\:1519821789314,tExtractDelimitedFields\:1518788925008,tAggregateSortedRow\:1518629320287,tLoop\:1518625177211,tForeach\:1518625095339,tFixedFlowInput\:1518624407869,tMSSqlCommit\:1518620821793
+Palette.RecentlyUsed.ComponentsList=tMap\:1539121955863,tFileOutputDelimited\:1538514643132,tLogRow\:1536588255678,tFilterRow\:1536588235272,tConvertType\:1536158586932,tExtractXMLField\:1535740499592,tJavaRow\:1535738768252,tXMLMap\:1535727363505,tAdvancedFileOutputXML\:1535725872241,tFileInputXML\:1535481340867,tFTPConnection\:1534962019581,tReplace\:1534790670999,tRunJob\:1534256632197,tWriteXMLField\:1532535763042,tMSSqlClose\:1534191565856,tBufferOutput\:1534170161303,tJava\:1531845974708,tJavaFlex\:1524681792904,tPostjob\:1534169762948,tFileOutputExcel\:1533156619558,tSetGlobalVar\:1531845697971,tFileInputExcel\:1526053010477,tMSSqlOutput\:1531507542561,tSOAP\:1531500602742,tReplicate\:1531499633334,tMsgBox\:1524146850550,tSystem\:1525730230053,tMSSqlInput\:1525730013714,tMSSqlConnection\:1525730002847,tSortRow\:1520875211988,tAggregateRow\:1520874967219,tUnite\:1519854928177,tJoin\:1519851037025,tRowGenerator\:1519821789314,tExtractDelimitedFields\:1518788925008,tAggregateSortedRow\:1518629320287,tLoop\:1518625177211,tForeach\:1518625095339,tFixedFlowInput\:1518624407869,tMSSqlCommit\:1518620821793
 TalendEditorPaletteFactory.Size=125
 TalendEditorPaletteFactory.StateAS400=1
 TalendEditorPaletteFactory.StateAccess=1
@@ -24,6 +24,7 @@ TalendEditorPaletteFactory.StateDB\ JDBC=1
 TalendEditorPaletteFactory.StateDB\ SCD=1
 TalendEditorPaletteFactory.StateDB2=1
 TalendEditorPaletteFactory.StateData\ Quality=0
+TalendEditorPaletteFactory.StateDatabases=0
 TalendEditorPaletteFactory.StateDataproc=1
 TalendEditorPaletteFactory.StateDropbox=1
 TalendEditorPaletteFactory.StateEDIFACT=1
