@@ -18,20 +18,20 @@
 		<item value="true" key="JavaJobScriptsExportWizardPage.APPLY_TO_CHILDREN_ID"/>
 		<item value="POJO" key="JavaJobScriptsExportWizardPage.STORE_EXPORTTYPE_ID"/>
 		<list key="JavaJobScriptsExportWizardPage.STORE_DESTINATION_NAMES_ID">
-			<item value="C:\BackSpace\Yamana\Data Entry\WebYamana\ETL\ETL_Diario_0.1.zip"/>
-			<item value="C:\BackSpace\Yamana\Data Entry\WebYamana\ETL\Plan_Mensual_0.1.zip"/>
-			<item value="C:\BackSpace\Yamana\Data Entry\WebYamana\ETL\DORE_0.1.zip"/>
-			<item value="C:\BackSpace\Yamana\WebYamana\WebYamana\ETL\DORE_0.1.zip"/>
-			<item value="C:\BackSpace\SEA\ETL ICP Proyectos\Extraccion_SEIA_PRO_0.1.zip"/>
+			<item value="C:\BackSpace\Falabella\Historicos_ExtraccionRegistroTareasCloud_0.11.zip"/>
+			<item value="C:\BackSpace\Falabella\Historicos_ExtraccionRegistroTareasCloud_0.10.zip"/>
+			<item value="C:\BackSpace\Falabella\Middleware_Insercion_0.9.zip"/>
+			<item value="C:\BackSpace\Falabella\Middleware_Insercion_0.8.zip"/>
+			<item value="C:\BackSpace\Falabella\Middleware_Extraccion_0.4.zip"/>
 		</list>
 		<section name="destinationFile">
-			<item value="C:\BackSpace\Yamana\Data Entry\WebYamana\ETL\Job Designs.zip" key="destinationFile"/>
+			<item value="C:\BackSpace\Falabella\Historicos_ExtraccionRegistroTareasCloud_0.11.zip" key="destinationFile"/>
 		</section>
 	</section>
 	<section name="ExportItemWizard">
 		<section name="destinationFile">
 			<item value="C:\BackSpace\Falabella\Middleware\ETL" key="directoryPath"/>
-			<item value="C:\Users\BackSpace\Downloads\ETL 03-09-2018.zip" key="archivePath"/>
+			<item value="C:\BackSpace\Falabella\ETL.zip" key="archivePath"/>
 		</section>
 	</section>
 </section>

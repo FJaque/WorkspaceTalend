@@ -5,11 +5,11 @@
     <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
   </context>
   <context confirmationNeeded="false" name="Test">
-    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Carga casos.xlsx"/>
+    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_TipoOrigen.xml"/>
   </context>
   <context confirmationNeeded="false" name="Desa">
-    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Carga casos v4.xlsx"/>
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Carga casos.xlsx"/>
     <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML P_TipoOrigen.xml"/>
   </context>
   <parameters>

@@ -4,7 +4,7 @@
 [INFO] 
 [INFO] FALABELLA___MIDDLEWARE Codes Master
 [INFO] FALABELLA___MIDDLEWARE Routines
-[INFO] FALABELLA___MIDDLEWARE DD_ActualizarRegistroTareas (Job Designs)
+[INFO] FALABELLA___MIDDLEWARE Historicos_ExtraccionRegistroTareasCloud (Job Designs)
 [INFO] 
 [INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
 [INFO]                                                                         
@@ -18,7 +18,7 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ routines ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 45 resources
+[INFO] Copying 48 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ routines ---
 [INFO] Nothing to compile - all classes are up to date
@@ -37,36 +37,36 @@
 [INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\routines-6.5.1.jar
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building FALABELLA___MIDDLEWARE DD_ActualizarRegistroTareas (Job Designs) 0.1.0
+[INFO] Building FALABELLA___MIDDLEWARE Historicos_ExtraccionRegistroTareasCloud (Job Designs) 0.11.0
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ DD_ActualizarRegistroTareas ---
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ Historicos_ExtraccionRegistroTareasCloud ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 0 resource
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ DD_ActualizarRegistroTareas ---
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ Historicos_ExtraccionRegistroTareasCloud ---
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ DD_ActualizarRegistroTareas ---
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-running-resources) @ Historicos_ExtraccionRegistroTareasCloud ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 3 resources
 [INFO] skip non existing resourceDirectory C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\src\main\resources\metadata\survivorship
 [INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ DD_ActualizarRegistroTareas ---
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ Historicos_ExtraccionRegistroTareasCloud ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 0 resource
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ DD_ActualizarRegistroTareas ---
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ Historicos_ExtraccionRegistroTareasCloud ---
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DD_ActualizarRegistroTareas ---
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Historicos_ExtraccionRegistroTareasCloud ---
 [INFO] Tests are skipped.
 [INFO] 
-[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ DD_ActualizarRegistroTareas ---
-[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dd_actualizarregistrotareas_0_1.jar
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ Historicos_ExtraccionRegistroTareasCloud ---
+[INFO] Building jar: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\historicos_extraccionregistrotareascloud_0_11.jar
 [INFO] 
-[INFO] --- maven-assembly-plugin:2.5.5:single (default) @ DD_ActualizarRegistroTareas ---
-[INFO] Reading assembly descriptor: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java/src/main/assemblies/assembly_DD_ActualizarRegistroTareas_0.1.xml
+[INFO] --- maven-assembly-plugin:2.5.5:single (default) @ Historicos_ExtraccionRegistroTareasCloud ---
+[INFO] Reading assembly descriptor: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java/src/main/assemblies/assembly_Historicos_ExtraccionRegistroTareasCloud_0.11.xml
 [WARNING] includeSubModules == false is incompatible with useAllReactorProjects. Ignoring.
 
 To refactor, remove the <includeSubModules/> flag, and use the <includes/> and <excludes/> sections to fine-tune the modules included.
@@ -79,17 +79,17 @@ o  '${pigudfs.binaries.includes.set}'
 [WARNING] The following patterns were never triggered in this artifact exclusion filter:
 o  'org.talend.job.falabella___middleware:*'
 
-[INFO] Building zip: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\dd_actualizarregistrotareas_0_1.zip
+[INFO] Building zip: C:\BackSpace\Programas\TOS_DI-20180116_1512-V6.5.1\workspace\.Java\target\historicos_extraccionregistrotareascloud_0_11.zip
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
 [INFO] FALABELLA___MIDDLEWARE Codes Master ............... SUCCESS [  0.004 s]
-[INFO] FALABELLA___MIDDLEWARE Routines ................... SUCCESS [  2.521 s]
-[INFO] FALABELLA___MIDDLEWARE DD_ActualizarRegistroTareas (Job Designs)  SUCCESS [  4.510 s]
+[INFO] FALABELLA___MIDDLEWARE Routines ................... SUCCESS [ 26.316 s]
+[INFO] FALABELLA___MIDDLEWARE Historicos_ExtraccionRegistroTareasCloud (Job Designs)  SUCCESS [ 31.753 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.185 s
-[INFO] Finished at: 2018-09-26T12:14:10-04:00
-[INFO] Final Memory: 11M/218M
+[INFO] Total time: 58.275 s
+[INFO] Finished at: 2018-11-12T17:54:33-04:00
+[INFO] Final Memory: 10M/196M
 [INFO] ------------------------------------------------------------------------

@@ -23,29 +23,29 @@
     <contextParameter comment="" name="FTPhost" prompt="FTPhost?" promptNeeded="false" repositoryContextId="_yS88sKYvEeiVJ6550bpNXg" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="Test">
-    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="XMLProductosCargados" prompt="XMLProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="ExcelExportacion" prompt="ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="ExcelRechazados" prompt="ExcelRechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="XMLDDRegistrosCargados" prompt="XMLDDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Dia a dia/XML Get Entities M_DDRegistroTareas.xml"/>
-    <contextParameter comment="" name="XMLFlagFoto" prompt="XMLFlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="XMLProgramacion" prompt="XMLProgramacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Dia a dia/XML Get Entities M_DDProgramacion.xml"/>
-    <contextParameter comment="" name="XMLTempAgrupado" prompt="XMLTempAgrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="ExcelLogCreados" prompt="ExcelLogCreados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="ExcelLogFallidos" prompt="ExcelLogFallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="ExcelLogXML" prompt="ExcelLogXML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="" name="XMLPais" prompt="XMLPais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value=""/>
-    <contextParameter comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-test&quot;"/>
-    <contextParameter comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;test-workflow-falabella.bizagi.com&quot;"/>
-    <contextParameter comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-test&quot;"/>
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Carga casos.xlsx"/>
+    <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_TipoOrigen.xml"/>
+    <contextParameter comment="" name="XMLProductosCargados" prompt="XMLProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML M_ProductosCargados.xml"/>
+    <contextParameter comment="" name="ExcelExportacion" prompt="ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Casos exportación.xlsx"/>
+    <contextParameter comment="" name="ExcelRechazados" prompt="ExcelRechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Rechazados.xlsx"/>
+    <contextParameter comment="" name="XMLDDRegistrosCargados" prompt="XMLDDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="" name="XMLFlagFoto" prompt="XMLFlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_FlagFoto.xml"/>
+    <contextParameter comment="" name="XMLProgramacion" prompt="XMLProgramacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="XMLTempAgrupado" prompt="XMLTempAgrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML Temp URL Foto.xml"/>
+    <contextParameter comment="" name="ExcelLogCreados" prompt="ExcelLogCreados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/LogCasosCreados.xlsx"/>
+    <contextParameter comment="" name="ExcelLogFallidos" prompt="ExcelLogFallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/LogCasosFallidos.xlsx"/>
+    <contextParameter comment="" name="ExcelLogXML" prompt="ExcelLogXML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/LogXML.xlsx"/>
+    <contextParameter comment="" name="XMLPais" prompt="XMLPais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_Pais.xml"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+    <contextParameter comment="IP o nombre host" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
     <contextParameter comment="" name="FTPusuario" prompt="FTPusuario?" promptNeeded="false" repositoryContextId="_yS88sKYvEeiVJ6550bpNXg" type="id_String" value="&quot;backspace_ftp&quot;"/>
     <contextParameter comment="" name="FTPpass" prompt="FTPpass?" promptNeeded="false" repositoryContextId="_yS88sKYvEeiVJ6550bpNXg" type="id_Password" value=""/>
     <contextParameter comment="" name="FTPpuerto" prompt="FTPpuerto?" promptNeeded="false" repositoryContextId="_yS88sKYvEeiVJ6550bpNXg" type="id_String" value="&quot;22&quot;"/>
     <contextParameter comment="" name="FTPhost" prompt="FTPhost?" promptNeeded="false" repositoryContextId="_yS88sKYvEeiVJ6550bpNXg" type="id_String" value="&quot;filetransfer.falabella.cl&quot;"/>
   </context>
   <context confirmationNeeded="false" name="Desa">
-    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Carga casos v4.xlsx"/>
+    <contextParameter comment="" name="ExcelImportacion" prompt="ExcelImportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Carga casos.xlsx"/>
     <contextParameter comment="" name="XMLOrigen" prompt="XMLOrigen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML P_TipoOrigen.xml"/>
     <contextParameter comment="" name="XMLProductosCargados" prompt="XMLProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/XML M_ProductosCargados.xml"/>
     <contextParameter comment="" name="ExcelExportacion" prompt="ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Middleware/Casos exportación.xlsx"/>
