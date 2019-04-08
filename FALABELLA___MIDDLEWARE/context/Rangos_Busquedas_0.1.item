@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_6xUpEAUXEem3i6rCEnyeUw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_LDPYYAUYEem3i6rCEnyeUw" comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_LDPYYQUYEem3i6rCEnyeUw" comment="Final" name="Final" prompt="Final?" promptNeeded="false" type="id_Long" value="100"/>
+    <contextParameter xmi:id="_WqfvYAUYEem3i6rCEnyeUw" comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" type="id_Long" value="100"/>
+    <contextParameter xmi:id="_e7g4cAUaEemoWMyJmGeIbA" comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" type="id_Long" value="30000"/>
+    <contextParameter xmi:id="_o_noYAUfEemoWMyJmGeIbA" comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_iThQ4DOPEemfn6XLzeUUHQ" comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" type="id_Boolean" value="true"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_f6iBQAUhEemoWMyJmGeIbA" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_f6iBQQUhEemoWMyJmGeIbA" comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_f6iBQgUhEemoWMyJmGeIbA" comment="Final" name="Final" prompt="Final?" promptNeeded="false" type="id_Long" value="2500"/>
+    <contextParameter xmi:id="_f6iBQwUhEemoWMyJmGeIbA" comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" type="id_Long" value="2500"/>
+    <contextParameter xmi:id="_f6iBRAUhEemoWMyJmGeIbA" comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" type="id_Long" value="30000"/>
+    <contextParameter xmi:id="_f6iBRQUhEemoWMyJmGeIbA" comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" type="id_Long" value="1"/>
+    <contextParameter xmi:id="_iThQ4TOPEemfn6XLzeUUHQ" comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" type="id_Boolean" value="true"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_f6iBRgUhEemoWMyJmGeIbA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_f6iBRwUhEemoWMyJmGeIbA" comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_f6iBSAUhEemoWMyJmGeIbA" comment="Final" name="Final" prompt="Final?" promptNeeded="false" type="id_Long" value="2500"/>
+    <contextParameter xmi:id="_f6iBSQUhEemoWMyJmGeIbA" comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" type="id_Long" value="2500"/>
+    <contextParameter xmi:id="_f6iBSgUhEemoWMyJmGeIbA" comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" type="id_Long" value="2000"/>
+    <contextParameter xmi:id="_f6iBSwUhEemoWMyJmGeIbA" comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" type="id_Long" value="0"/>
+    <contextParameter xmi:id="_iThQ4jOPEemfn6XLzeUUHQ" comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" type="id_Boolean" value="true"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_uG70ABXUEemGbvxwYFYosQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_uG70ARXUEemGbvxwYFYosQ" comment="Host o IP Oracle" name="host" prompt="host?" promptNeeded="false" type="id_String" value="&quot;oracledesa11g.seanet.gob.cl&quot;"/>
+    <contextParameter xmi:id="_uG70AhXUEemGbvxwYFYosQ" comment="Puerto conexion Oracle" name="puerto" prompt="puerto?" promptNeeded="false" type="id_String" value="&quot;1521&quot;"/>
+    <contextParameter xmi:id="_uG70AxXUEemGbvxwYFYosQ" comment="SID Oracle" name="database" prompt="database?" promptNeeded="false" type="id_String" value="&quot;oradesa&quot;"/>
+    <contextParameter xmi:id="_uG70BBXUEemGbvxwYFYosQ" comment="Usuario de DB Oracle" name="usuario" prompt="usuario?" promptNeeded="false" type="id_String" value="&quot;seiaprod03&quot;"/>
+    <contextParameter xmi:id="_uG70BRXUEemGbvxwYFYosQ" comment="Contrasena Oracle" name="pass" prompt="pass?" promptNeeded="false" type="id_Password" value="LKtH04jTZ/4xbHpJ8lPskw=="/>
+    <contextParameter xmi:id="_uG70BhXUEemGbvxwYFYosQ" comment="Ruta de generacion de archivo" name="rutaExcel" prompt="rutaExcel?" promptNeeded="false" type="id_String" value="&quot;//10.15.0.27/sea/DTGI/Reportes/BDD_Proyectos/&quot;"/>
+    <contextParameter xmi:id="_uG70BxXUEemGbvxwYFYosQ" comment="Host o IP SQL Server" name="SQLhost" prompt="SQLhost?" promptNeeded="false" type="id_String" value="&quot;10.15.7.10&quot;"/>
+    <contextParameter xmi:id="_uG70CBXUEemGbvxwYFYosQ" comment="Puerto conexion SQL Server" name="SQLpuerto" prompt="SQLpuerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_uG70CRXUEemGbvxwYFYosQ" comment="Nombre DB destino SQL Server" name="SQLdatabase" prompt="SQLdatabase?" promptNeeded="false" type="id_String" value="&quot;reportes&quot;"/>
+    <contextParameter xmi:id="_uG70ChXUEemGbvxwYFYosQ" comment="Usuario de DB SQL Server" name="SQLusuario" prompt="SQLusuario?" promptNeeded="false" type="id_String" value="&quot;reportes_sea&quot;"/>
+    <contextParameter xmi:id="_uG70CxXUEemGbvxwYFYosQ" comment="Contrasena SQL Server" name="SQLpass" prompt="SQLpass?" promptNeeded="false" type="id_Password" value="YUP4PU9L2ivOkaNY8x6sfw=="/>
+    <contextParameter xmi:id="_uG70DBXUEemGbvxwYFYosQ" comment="Ruta de generacion de archivo SQL a Excel" name="rutaExcel2" prompt="rutaExcel2?" promptNeeded="false" type="id_String" value="&quot;//10.15.0.27/sea/DTGI/Reportes/ICP_Proyectos/&quot;"/>
+    <contextParameter xmi:id="_uG70DRXUEemGbvxwYFYosQ" comment="Fecha para generar nombre de Excel" name="Fecha" prompt="Fecha?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uG70DhXUEemGbvxwYFYosQ" comment="BDD_ICP_Proyectos_Fecha" name="nombreExcel" prompt="nombreExcel?" promptNeeded="false" type="id_String" value="&quot;BDD_ICP_Proyectos_Desa_&quot;"/>
+    <contextParameter xmi:id="_uG70DxXUEemGbvxwYFYosQ" comment="Nombre DB origen SQL Server" name="SQLOrigenDatabase" prompt="SQLOrigenDatabase?" promptNeeded="false" type="id_String" value="&quot;SEIAPROD&quot;"/>
+    <contextParameter xmi:id="_uG70EBXUEemGbvxwYFYosQ" comment="Usuario de DB SQL Server" name="SQLOrigenUsuario" prompt="SQLOrigenUsuario?" promptNeeded="false" type="id_String" value="&quot;backspace&quot;"/>
+    <contextParameter xmi:id="_uG70ERXUEemGbvxwYFYosQ" comment="Contrasena SQL Server" name="SQLOrigenPass" prompt="SQLOrigenPass?" promptNeeded="false" type="id_Password" value="1caql4cxyFWL4S0ESdFL6g=="/>
+    <contextParameter xmi:id="_uG70EhXUEemGbvxwYFYosQ" comment="Puerto conexion SQL Server" name="SQLOrigenPuerto" prompt="SQLOrigenPuerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_uG70ExXUEemGbvxwYFYosQ" comment="Host o IP SQL Server" name="SQLOrigenHost" prompt="SQLOrigenHost?" promptNeeded="false" type="id_String" value="&quot;10.15.7.10&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uG70FBXUEemGbvxwYFYosQ" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_uG70FRXUEemGbvxwYFYosQ" comment="Host o IP Oracle" name="host" prompt="host?" promptNeeded="false" type="id_String" value="&quot;orarac1.seanet.gob.cl&quot;"/>
+    <contextParameter xmi:id="_uG70FhXUEemGbvxwYFYosQ" comment="Puerto conexion Oracle" name="puerto" prompt="puerto?" promptNeeded="false" type="id_String" value="&quot;1521&quot;"/>
+    <contextParameter xmi:id="_uG70FxXUEemGbvxwYFYosQ" comment="SID Oracle" name="database" prompt="database?" promptNeeded="false" type="id_String" value="&quot;oraprod1&quot;"/>
+    <contextParameter xmi:id="_uG70GBXUEemGbvxwYFYosQ" comment="Usuario de DB Oracle" name="usuario" prompt="usuario?" promptNeeded="false" type="id_String" value="&quot;seiaprod&quot;"/>
+    <contextParameter xmi:id="_uG70GRXUEemGbvxwYFYosQ" comment="Contrasena Oracle" name="pass" prompt="pass?" promptNeeded="false" type="id_Password" value="7/Q3a2LUUhOtdYFNfG2WyQ=="/>
+    <contextParameter xmi:id="_uG70GhXUEemGbvxwYFYosQ" comment="Ruta de generacion de archivo" name="rutaExcel" prompt="rutaExcel?" promptNeeded="false" type="id_String" value="&quot;//10.15.0.27/sea/DTGI/Reportes/BDD_Proyectos/&quot;"/>
+    <contextParameter xmi:id="_uG70GxXUEemGbvxwYFYosQ" comment="Host o IP SQL Server" name="SQLhost" prompt="SQLhost?" promptNeeded="false" type="id_String" value="&quot;10.15.6.128&quot;"/>
+    <contextParameter xmi:id="_uG70HBXUEemGbvxwYFYosQ" comment="Puerto conexion SQL Server" name="SQLpuerto" prompt="SQLpuerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_uG70HRXUEemGbvxwYFYosQ" comment="Nombre DB destino SQL Server" name="SQLdatabase" prompt="SQLdatabase?" promptNeeded="false" type="id_String" value="&quot;reportes&quot;"/>
+    <contextParameter xmi:id="_uG70HhXUEemGbvxwYFYosQ" comment="Usuario de DB SQL Server" name="SQLusuario" prompt="SQLusuario?" promptNeeded="false" type="id_String" value="&quot;reportes_sea&quot;"/>
+    <contextParameter xmi:id="_uG70HxXUEemGbvxwYFYosQ" comment="Contrasena SQL Server" name="SQLpass" prompt="SQLpass?" promptNeeded="false" type="id_Password" value="YUP4PU9L2ivOkaNY8x6sfw=="/>
+    <contextParameter xmi:id="_uG70IBXUEemGbvxwYFYosQ" comment="Ruta de generacion de archivo SQL a Excel" name="rutaExcel2" prompt="rutaExcel2?" promptNeeded="false" type="id_String" value="&quot;//10.15.0.27/sea/DTGI/Reportes/ICP_Proyectos/&quot;"/>
+    <contextParameter xmi:id="_uG70IRXUEemGbvxwYFYosQ" comment="Fecha para generar nombre de Excel" name="Fecha" prompt="Fecha?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uG70IhXUEemGbvxwYFYosQ" comment="BDD_ICP_Proyectos_Fecha" name="nombreExcel" prompt="nombreExcel?" promptNeeded="false" type="id_String" value="&quot;BDD_ICP_Proyectos_&quot;"/>
+    <contextParameter xmi:id="_uG70IxXUEemGbvxwYFYosQ" comment="Nombre DB origen SQL Server" name="SQLOrigenDatabase" prompt="SQLOrigenDatabase?" promptNeeded="false" type="id_String" value="&quot;SEIAPROD&quot;"/>
+    <contextParameter xmi:id="_uG70JBXUEemGbvxwYFYosQ" comment="Usuario de DB SQL Server" name="SQLOrigenUsuario" prompt="SQLOrigenUsuario?" promptNeeded="false" type="id_String" value="&quot;backspace&quot;"/>
+    <contextParameter xmi:id="_uG70JRXUEemGbvxwYFYosQ" comment="Contrasena SQL Server" name="SQLOrigenPass" prompt="SQLOrigenPass?" promptNeeded="false" type="id_Password" value="1caql4cxyFWL4S0ESdFL6g=="/>
+    <contextParameter xmi:id="_uG70JhXUEemGbvxwYFYosQ" comment="Puerto conexion SQL Server" name="SQLOrigenPuerto" prompt="SQLOrigenPuerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_uG70JxXUEemGbvxwYFYosQ" comment="Host o IP SQL Server" name="SQLOrigenHost" prompt="SQLOrigenHost?" promptNeeded="false" type="id_String" value="&quot;10.15.7.10&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

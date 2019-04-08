@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Conexion_TW_URL" prompt="Conexion_TW_URL?" promptNeeded="false" repositoryContextId="_BgKgICh5EemOc_Oi3N3v-Q" type="id_String" value="&quot;https://backspace.teamwork.com/&quot;"/>
+    <contextParameter comment="" name="Conexion_TW_Tareas" prompt="Conexion_TW_Tareas?" promptNeeded="false" repositoryContextId="_BgKgICh5EemOc_Oi3N3v-Q" type="id_String" value="&quot;tasks.json&quot;"/>
+    <contextParameter comment="" name="Conexion_TW_Token" prompt="Conexion_TW_Token?" promptNeeded="false" repositoryContextId="_BgKgICh5EemOc_Oi3N3v-Q" type="id_String" value="&quot;twp_ZVSQNoStfl5Jok8jfnE8zxGK6DNa&quot;"/>
+    <contextParameter comment="" name="Conexion_TW_Usuario" prompt="Conexion_TW_Usuario?" promptNeeded="false" repositoryContextId="_BgKgICh5EemOc_Oi3N3v-Q" type="id_String" value="&quot;fabian.jaque@backspace.cl&quot;"/>
+    <contextParameter comment="" name="Conexion_TW_Pass" prompt="Conexion_TW_Pass?" promptNeeded="false" repositoryContextId="_BgKgICh5EemOc_Oi3N3v-Q" type="id_Password" value="nHTnjOxOxCwRQoDWHcLh9w=="/>
+    <contextParameter comment="" name="Conexion_TW_Actividades" prompt="Conexion_TW_Actividades?" promptNeeded="false" repositoryContextId="_BgKgICh5EemOc_Oi3N3v-Q" type="id_String" value="&quot;time_entries.json&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/BackSpace/Programas/TOS_DI-20180116_1512-V6.5.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_bcm7YCh2EemOc_Oi3N3v-Q" name="DataOperation"/>
+    <routinesParameter id="_bdZlkCh2EemOc_Oi3N3v-Q" name="Mathematical"/>
+    <routinesParameter id="_bd0cUCh2EemOc_Oi3N3v-Q" name="Numeric"/>
+    <routinesParameter id="_beH-UCh2EemOc_Oi3N3v-Q" name="Relational"/>
+    <routinesParameter id="_bePTECh2EemOc_Oi3N3v-Q" name="StringHandling"/>
+    <routinesParameter id="_beqJ0Ch2EemOc_Oi3N3v-Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_be6ogCh2EemOc_Oi3N3v-Q" name="TalendDate"/>
+    <routinesParameter id="_bfLHMCh2EemOc_Oi3N3v-Q" name="TalendString"/>
+    <routinesParameter id="_bfWGUCh2EemOc_Oi3N3v-Q" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="context.Conexion_TW_URL"/>
+    <elementParameter field="TEXT" name="PATH" value="context.Conexion_TW_Actividades"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.Conexion_TW_Usuario"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufzi5sL2vlFabVB1TXhy8oXb4CWlUAIccw="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata label="out1" name="out1">
+      <column comment="" defaultValue="" key="false" length="-1" name="projectId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="isbillable" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="tasklistId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="todoListName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="todoItemName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="isbilled" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="updatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="todoListId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="canEdit" nullable="true" precision="-1" sourceType="id_Boolean" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="taskEstimatedTime" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="companyName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="id" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="invoiceNo" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="personLastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="parentTaskName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dateUserPerspective" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="minutes" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="personFirstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="description" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketId" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="createdAt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="taskIsPrivate" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="parentTaskId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="companyId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="projectStatus" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="personId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="projectName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="taskIsSubTask" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="todoItemId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="hasStartTime" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="hours" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="row1/statusCode"/>
+        <nodes name="body" expression="" type="id_Document" xpath="row1/body">
+          <children name="root" type="id_String" xpath="row1.body:/root" main="true">
+            <children name="time-entries" type="id_String" xpath="row1.body:/root/time-entries" loop="true" main="true">
+              <children name="project-id" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row1.body:/root/time-entries/project-id"/>
+              <children name="isbillable" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="row1.body:/root/time-entries/isbillable"/>
+              <children name="tasklistId" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="row1.body:/root/time-entries/tasklistId"/>
+              <children name="todo-list-name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="row1.body:/root/time-entries/todo-list-name"/>
+              <children name="todo-item-name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="row1.body:/root/time-entries/todo-item-name"/>
+              <children name="isbilled" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="row1.body:/root/time-entries/isbilled"/>
+              <children name="updated-date" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="row1.body:/root/time-entries/updated-date" pattern="&quot;dd-MM-yyyy&quot;"/>
+              <children name="todo-list-id" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="row1.body:/root/time-entries/todo-list-id"/>
+              <children name="canEdit" type="id_Boolean" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="row1.body:/root/time-entries/canEdit"/>
+              <children name="taskEstimatedTime" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.9" xpath="row1.body:/root/time-entries/taskEstimatedTime"/>
+              <children name="company-name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.10" xpath="row1.body:/root/time-entries/company-name"/>
+              <children name="id" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.11" xpath="row1.body:/root/time-entries/id"/>
+              <children name="invoiceNo" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.12" xpath="row1.body:/root/time-entries/invoiceNo"/>
+              <children name="person-last-name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.13" xpath="row1.body:/root/time-entries/person-last-name"/>
+              <children name="parentTaskName" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.14" xpath="row1.body:/root/time-entries/parentTaskName"/>
+              <children name="dateUserPerspective" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.15" xpath="row1.body:/root/time-entries/dateUserPerspective" pattern="&quot;dd-MM-yyyy&quot;"/>
+              <children name="minutes" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.16" xpath="row1.body:/root/time-entries/minutes"/>
+              <children name="person-first-name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.17" xpath="row1.body:/root/time-entries/person-first-name"/>
+              <children name="description" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.18" xpath="row1.body:/root/time-entries/description"/>
+              <children name="ticket-id" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.19" xpath="row1.body:/root/time-entries/ticket-id"/>
+              <children name="createdAt" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.20" xpath="row1.body:/root/time-entries/createdAt" pattern="&quot;dd-MM-yyyy&quot;"/>
+              <children name="taskIsPrivate" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.21" xpath="row1.body:/root/time-entries/taskIsPrivate"/>
+              <children name="parentTaskId" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.22" xpath="row1.body:/root/time-entries/parentTaskId"/>
+              <children name="company-id" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.23" xpath="row1.body:/root/time-entries/company-id"/>
+              <children name="project-status" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.24" xpath="row1.body:/root/time-entries/project-status"/>
+              <children name="person-id" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.25" xpath="row1.body:/root/time-entries/person-id"/>
+              <children name="project-name" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.26" xpath="row1.body:/root/time-entries/project-name"/>
+              <children name="taskIsSubTask" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.27" xpath="row1.body:/root/time-entries/taskIsSubTask"/>
+              <children name="todo-item-id" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.28" xpath="row1.body:/root/time-entries/todo-item-id"/>
+              <children name="date" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.29" xpath="row1.body:/root/time-entries/date" pattern="&quot;dd-MM-yyyy&quot;"/>
+              <children name="has-start-time" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.30" xpath="row1.body:/root/time-entries/has-start-time"/>
+              <children name="hours" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.31" xpath="row1.body:/root/time-entries/hours"/>
+            </children>
+            <children name="STATUS" type="id_String" xpath="row1.body:/root/STATUS"/>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row1/string"/>
+      </inputTrees>
+      <outputTrees name="out1">
+        <nodes name="projectId" expression="[row1.body:/root/time-entries/project-id]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="out1/projectId"/>
+        <nodes name="isbillable" expression="[row1.body:/root/time-entries/isbillable]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="out1/isbillable"/>
+        <nodes name="tasklistId" expression="[row1.body:/root/time-entries/tasklistId]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="out1/tasklistId"/>
+        <nodes name="todoListName" expression="[row1.body:/root/time-entries/todo-list-name]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="out1/todoListName"/>
+        <nodes name="todoItemName" expression="[row1.body:/root/time-entries/todo-item-name]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="out1/todoItemName"/>
+        <nodes name="isbilled" expression="[row1.body:/root/time-entries/isbilled]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="out1/isbilled"/>
+        <nodes name="updatedDate" expression="[row1.body:/root/time-entries/updated-date]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="out1/updatedDate" pattern="&quot;dd-MM-yyyy&quot;"/>
+        <nodes name="todoListId" expression="[row1.body:/root/time-entries/todo-list-id]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="out1/todoListId"/>
+        <nodes name="canEdit" expression="[row1.body:/root/time-entries/canEdit]" type="id_Boolean" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="out1/canEdit"/>
+        <nodes name="taskEstimatedTime" expression="[row1.body:/root/time-entries/taskEstimatedTime]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="out1/taskEstimatedTime"/>
+        <nodes name="companyName" expression="[row1.body:/root/time-entries/company-name]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.10" xpath="out1/companyName"/>
+        <nodes name="id" expression="[row1.body:/root/time-entries/id]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.11" xpath="out1/id"/>
+        <nodes name="invoiceNo" expression="[row1.body:/root/time-entries/invoiceNo]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.12" xpath="out1/invoiceNo"/>
+        <nodes name="personLastName" expression="[row1.body:/root/time-entries/person-last-name]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.13" xpath="out1/personLastName"/>
+        <nodes name="parentTaskName" expression="[row1.body:/root/time-entries/parentTaskName]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.14" xpath="out1/parentTaskName"/>
+        <nodes name="dateUserPerspective" expression="[row1.body:/root/time-entries/dateUserPerspective]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.15" xpath="out1/dateUserPerspective" pattern="&quot;dd-MM-yyyy&quot;"/>
+        <nodes name="minutes" expression="[row1.body:/root/time-entries/minutes]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.16" xpath="out1/minutes"/>
+        <nodes name="personFirstName" expression="[row1.body:/root/time-entries/person-first-name]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.17" xpath="out1/personFirstName"/>
+        <nodes name="description" expression="[row1.body:/root/time-entries/description]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.18" xpath="out1/description"/>
+        <nodes name="ticketId" expression="[row1.body:/root/time-entries/ticket-id]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.19" xpath="out1/ticketId"/>
+        <nodes name="createdAt" expression="[row1.body:/root/time-entries/createdAt]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.20" xpath="out1/createdAt" pattern="&quot;dd-MM-yyyy&quot;"/>
+        <nodes name="taskIsPrivate" expression="[row1.body:/root/time-entries/taskIsPrivate]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.21" xpath="out1/taskIsPrivate"/>
+        <nodes name="parentTaskId" expression="[row1.body:/root/time-entries/parentTaskId]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.22" xpath="out1/parentTaskId"/>
+        <nodes name="companyId" expression="[row1.body:/root/time-entries/company-id]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.23" xpath="out1/companyId"/>
+        <nodes name="projectStatus" expression="[row1.body:/root/time-entries/project-status]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.24" xpath="out1/projectStatus"/>
+        <nodes name="personId" expression="[row1.body:/root/time-entries/person-id]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.25" xpath="out1/personId"/>
+        <nodes name="projectName" expression="[row1.body:/root/time-entries/project-name]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.26" xpath="out1/projectName"/>
+        <nodes name="taskIsSubTask" expression="[row1.body:/root/time-entries/taskIsSubTask]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.27" xpath="out1/taskIsSubTask"/>
+        <nodes name="todoItemId" expression="[row1.body:/root/time-entries/todo-item-id]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.28" xpath="out1/todoItemId"/>
+        <nodes name="date" expression="[row1.body:/root/time-entries/date]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.29" xpath="out1/date" pattern="&quot;dd-MM-yyyy&quot;"/>
+        <nodes name="hasStartTime" expression="[row1.body:/root/time-entries/has-start-time]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.30" xpath="out1/hasStartTime"/>
+        <nodes name="hours" expression="[row1.body:/root/time-entries/hours]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.31" xpath="out1/hours"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12" target="//@node.1/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.13" target="//@node.1/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.15" target="//@node.1/@nodeData/@outputTrees.0/@nodes.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.16" target="//@node.1/@nodeData/@outputTrees.0/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.1/@nodeData/@outputTrees.0/@nodes.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.1/@nodeData/@outputTrees.0/@nodes.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.19" target="//@node.1/@nodeData/@outputTrees.0/@nodes.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.20" target="//@node.1/@nodeData/@outputTrees.0/@nodes.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.21" target="//@node.1/@nodeData/@outputTrees.0/@nodes.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.22" target="//@node.1/@nodeData/@outputTrees.0/@nodes.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.23" target="//@node.1/@nodeData/@outputTrees.0/@nodes.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.24" target="//@node.1/@nodeData/@outputTrees.0/@nodes.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.25" target="//@node.1/@nodeData/@outputTrees.0/@nodes.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.26" target="//@node.1/@nodeData/@outputTrees.0/@nodes.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.27" target="//@node.1/@nodeData/@outputTrees.0/@nodes.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.28" target="//@node.1/@nodeData/@outputTrees.0/@nodes.28"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.29" target="//@node.1/@nodeData/@outputTrees.0/@nodes.29"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.30" target="//@node.1/@nodeData/@outputTrees.0/@nodes.30"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.31" target="//@node.1/@nodeData/@outputTrees.0/@nodes.31"/>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/BackSpace/Otros/Conexiones TW/salida_time_entries.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="projectId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isbillable"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tasklistId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="todoListName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="todoItemName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isbilled"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="updatedDate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="todoListId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="canEdit"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="taskEstimatedTime"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="companyName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="invoiceNo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="personLastName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parentTaskName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateUserPerspective"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="minutes"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="personFirstName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ticketId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="createdAt"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="taskIsPrivate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parentTaskId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="companyId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="projectStatus"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="personId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="projectName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="taskIsSubTask"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="todoItemId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hasStartTime"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hours"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tFileOutputExcel_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="projectId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="isbillable" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="tasklistId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="todoListName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="todoItemName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="isbilled" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="updatedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="todoListId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="canEdit" nullable="true" precision="-1" sourceType="id_Boolean" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="taskEstimatedTime" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="companyName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="id" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="invoiceNo" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="personLastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="parentTaskName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dateUserPerspective" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="minutes" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="personFirstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="description" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketId" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="createdAt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="taskIsPrivate" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="parentTaskId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="companyId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="projectStatus" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="personId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="projectName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="taskIsSubTask" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="todoItemId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="hasStartTime" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="hours" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

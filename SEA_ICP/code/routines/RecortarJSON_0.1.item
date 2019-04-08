@@ -1,0 +1,144 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class RecortarJSON {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static Long obtenerIdSolicitud(String texto) {
+    	Long idSolicitud = null;
+    	if (texto != null) {
+    		// Original //
+    		// a:2:{s:9:"id_adenda";s:10:"2138408296";s:12:"id_solicitud";s:10:"2140387059";}
+    		//System.out.println("Original: " + texto);
+    		
+    		// Quitar " //
+    		texto = texto.replace("\"", "");
+    		
+    		// Recortar //
+    		// s:9:"id_adenda";s:10:"2138408296";s:12:"id_solicitud";s:10:"2140387059";
+    		texto = texto.substring(texto.indexOf("{")+1);
+    		//System.out.println("1: " + texto);
+    		texto = texto.substring(0, texto.lastIndexOf("}"));
+    		//System.out.println("2: " + texto);
+    				
+    		// Dividir por ; //
+    		// s:9:"id_adenda"
+    		// s:10:"2138408296"
+    		// s:12:"id_solicitud"
+    		// s:10:"2140387059"
+    		String[] filas = texto.split(";");
+    		for	(int i = 0; i<filas.length; i++)
+    		{
+    			// Dividir por : //
+    			// id_adenda
+    			// 2138408296
+    			// id_solicitud
+    			// 2140387059
+    			//System.out.println("3: " + filas[i]);
+    			String[] campos = filas[i].split(":");
+
+    			// Buscar solicitud //
+    			// id_solicitud
+    			//System.out.println("3.5: " + campos[2]);
+    			if(campos.length >= 3 && campos[2] != null && campos[2].equals("id_solicitud"))
+    			{
+    				// Sacar fila siguiente //
+    				// 2140387059
+    				//System.out.println("4: " + campos[2]);
+    				if(filas[i+1] != null)
+    				{
+    					String[] camposSolicitud = filas[i+1].split(":");
+    					// Si es distinto de nulo convertirlo a número
+    					//System.out.println("5: " + camposSolicitud[2]);
+    					if(camposSolicitud.length >= 3 && camposSolicitud[2] != null)
+    						idSolicitud = Long.parseLong(camposSolicitud[2]);
+    				}
+    			}
+    		}
+        }
+    	return(idSolicitud);
+    }
+    
+    public static Long obtenerIdAdenda(String texto) {
+    	Long idSolicitud = null;
+    	if (texto != null) {
+    		// Original //
+    		// a:2:{s:9:"id_adenda";s:10:"2138408296";s:12:"id_solicitud";s:10:"2140387059";}
+    		//System.out.println("Original: " + texto);
+    		
+    		// Quitar " //
+    		texto = texto.replace("\"", "");
+    		
+    		// Recortar //
+    		// s:9:"id_adenda";s:10:"2138408296";s:12:"id_solicitud";s:10:"2140387059";
+    		texto = texto.substring(texto.indexOf("{")+1);
+    		//System.out.println("1: " + texto);
+    		texto = texto.substring(0, texto.lastIndexOf("}"));
+    		//System.out.println("2: " + texto);
+    				
+    		// Dividir por ; //
+    		// s:9:"id_adenda"
+    		// s:10:"2138408296"
+    		// s:12:"id_solicitud"
+    		// s:10:"2140387059"
+    		String[] filas = texto.split(";");
+    		for	(int i = 0; i<filas.length; i++)
+    		{
+    			// Dividir por : //
+    			// id_adenda
+    			// 2138408296
+    			// id_solicitud
+    			// 2140387059
+    			//System.out.println("3: " + filas[i]);
+    			String[] campos = filas[i].split(":");
+
+    			// Buscar solicitud //
+    			// id_solicitud
+    			//System.out.println("3.5: " + campos[2]);
+    			if(campos.length >= 3 && campos[2] != null && campos[2].equals("id_adenda"))
+    			{
+    				// Sacar fila siguiente //
+    				// 2140387059
+    				//System.out.println("4: " + campos[2]);
+    				if(filas[i+1] != null)
+    				{
+    					String[] camposSolicitud = filas[i+1].split(":");
+    					// Si es distinto de nulo convertirlo a número
+    					//System.out.println("5: " + camposSolicitud[2]);
+    					if(camposSolicitud.length >= 3 && camposSolicitud[2] != null)
+    						idSolicitud = Long.parseLong(camposSolicitud[2]);
+    				}
+    			}
+    		}
+        }
+    	return(idSolicitud);
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_g6lj0BTqEemNp4to5ssXKA" confirmationNeeded="false" name="Local">
+    <contextParameter xmi:id="_g6lj0RTqEemNp4to5ssXKA" comment="" name="Fecha" prompt="Fecha?" promptNeeded="true" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6lj0hTqEemNp4to5ssXKA" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_g6lj0xTqEemNp4to5ssXKA" comment="" name="Fecha" prompt="Fecha?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6lj1BTqEemNp4to5ssXKA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_g6lj1RTqEemNp4to5ssXKA" comment="" name="Fecha" prompt="Fecha?" promptNeeded="true" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

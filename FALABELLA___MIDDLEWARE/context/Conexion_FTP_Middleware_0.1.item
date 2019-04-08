@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_oI28UDN-Eemfn6XLzeUUHQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_oI28UTN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Host" prompt="Conexion_FTP_Host?" promptNeeded="false" type="id_String" value="&quot;b2bfta.falabella.com&quot;"/>
+    <contextParameter xmi:id="_oI28UjN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Usuario" prompt="Conexion_FTP_Usuario?" promptNeeded="false" type="id_String" value="&quot;backspacets2_ftp&quot;"/>
+    <contextParameter xmi:id="_oI28UzN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Pass" prompt="Conexion_FTP_Pass?" promptNeeded="false" type="id_Password" value="yWsbs2Kv+ymRibsN5RF/vQ=="/>
+    <contextParameter xmi:id="_oI28VDN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Local_a_Remoto" prompt="Conexion_FTP_Local_a_Remoto?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware/ext_a_fal&quot;"/>
+    <contextParameter xmi:id="_oI28VTN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Remoto" prompt="Conexion_FTP_Remoto?" promptNeeded="false" type="id_String" value="&quot;/fal_a_ext&quot;"/>
+    <contextParameter xmi:id="_oI28VjN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Puerto" prompt="Conexion_FTP_Puerto?" promptNeeded="false" type="id_Integer" value="10022"/>
+    <contextParameter xmi:id="_oI28VzN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Mascara" prompt="Conexion_FTP_Mascara?" promptNeeded="false" type="id_String" value="&quot;*.xlsx&quot;"/>
+    <contextParameter xmi:id="_oI28WDN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Remoto_a_Local" prompt="Conexion_FTP_Remoto_a_Local?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware/fal_a_ext&quot;"/>
+    <contextParameter xmi:id="_oI28WTN-Eemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Historicos" prompt="Conexion_FTP_Historicos?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware/Archivos historicos&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Q1TO4DOBEemfn6XLzeUUHQ" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_Q1TO4TOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Host" prompt="Conexion_FTP_Host?" promptNeeded="false" type="id_String" value="&quot;b2bfta.falabella.com&quot;"/>
+    <contextParameter xmi:id="_Q1TO4jOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Usuario" prompt="Conexion_FTP_Usuario?" promptNeeded="false" type="id_String" value="&quot;backspacets2_ftp&quot;"/>
+    <contextParameter xmi:id="_Q1TO4zOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Pass" prompt="Conexion_FTP_Pass?" promptNeeded="false" type="id_Password" value="yWsbs2Kv+ymRibsN5RF/vQ=="/>
+    <contextParameter xmi:id="_Q1TO5DOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Local_a_Remoto" prompt="Conexion_FTP_Local_a_Remoto?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware/ext_a_fal&quot;"/>
+    <contextParameter xmi:id="_Q1TO5TOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Remoto" prompt="Conexion_FTP_Remoto?" promptNeeded="false" type="id_String" value="&quot;/fal_a_ext&quot;"/>
+    <contextParameter xmi:id="_Q1TO5jOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Puerto" prompt="Conexion_FTP_Puerto?" promptNeeded="false" type="id_Integer" value="10022"/>
+    <contextParameter xmi:id="_Q1TO5zOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Mascara" prompt="Conexion_FTP_Mascara?" promptNeeded="false" type="id_String" value="&quot;*.xlsx&quot;"/>
+    <contextParameter xmi:id="_Q1TO6DOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Remoto_a_Local" prompt="Conexion_FTP_Remoto_a_Local?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware/fal_a_ext&quot;"/>
+    <contextParameter xmi:id="_Q1TO6TOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Historicos" prompt="Conexion_FTP_Historicos?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware/Archivos historicos&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Q1TO6jOBEemfn6XLzeUUHQ" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_Q1TO6zOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Host" prompt="Conexion_FTP_Host?" promptNeeded="false" type="id_String" value="&quot;b2bfta.falabella.com&quot;"/>
+    <contextParameter xmi:id="_Q1TO7DOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Usuario" prompt="Conexion_FTP_Usuario?" promptNeeded="false" type="id_String" value="&quot;backspacets2_ftp&quot;"/>
+    <contextParameter xmi:id="_Q1TO7TOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Pass" prompt="Conexion_FTP_Pass?" promptNeeded="false" type="id_Password" value="yWsbs2Kv+ymRibsN5RF/vQ=="/>
+    <contextParameter xmi:id="_Q1TO7jOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Local_a_Remoto" prompt="Conexion_FTP_Local_a_Remoto?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware - Test/ext_a_fal&quot;"/>
+    <contextParameter xmi:id="_Q1TO7zOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Remoto" prompt="Conexion_FTP_Remoto?" promptNeeded="false" type="id_String" value="&quot;/fal_a_ext&quot;"/>
+    <contextParameter xmi:id="_Q1TO8DOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Puerto" prompt="Conexion_FTP_Puerto?" promptNeeded="false" type="id_Integer" value="10022"/>
+    <contextParameter xmi:id="_Q1TO8TOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Mascara" prompt="Conexion_FTP_Mascara?" promptNeeded="false" type="id_String" value="&quot;*.xlsx&quot;"/>
+    <contextParameter xmi:id="_Q1TO8jOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Remoto_a_Local" prompt="Conexion_FTP_Remoto_a_Local?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware - Test/fal_a_ext&quot;"/>
+    <contextParameter xmi:id="_Q1TO8zOBEemfn6XLzeUUHQ" comment="" name="Conexion_FTP_Historicos" prompt="Conexion_FTP_Historicos?" promptNeeded="false" type="id_String" value="&quot;C:/BackSpace/Middleware - Test/Archivos historicos&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

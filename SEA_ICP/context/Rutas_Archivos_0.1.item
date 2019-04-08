@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_uHHaMBXUEemGbvxwYFYosQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_uHHaMRXUEemGbvxwYFYosQ" comment="&quot;Excel con ID de tipos de documentos&quot;" name="ArchivoConstantes" prompt="ArchivoConstantes?" promptNeeded="false" type="id_File" value="C:/opt/Adenda/CONS_DOC_TIPOS.xlsx"/>
+  <contextParameter xmi:id="_uHHaMhXUEemGbvxwYFYosQ" comment="" name="LinkBase" prompt="LinkBase?" promptNeeded="false" type="id_String" value="&quot;http://seia.sea.gob.cl/documentos/documento.php?idDocumento=&quot;"/>
+  <contextParameter xmi:id="_uHHaMxXUEemGbvxwYFYosQ" comment="" name="LinkExpediente" prompt="LinkExpediente?" promptNeeded="false" type="id_String" value="&quot;http://seia.sea.gob.cl/expediente/expediente.php?id_expediente=&quot;"/>
+</talendfile:ContextType>

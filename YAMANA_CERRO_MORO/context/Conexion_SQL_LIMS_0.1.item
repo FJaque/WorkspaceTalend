@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_g6UeEBTqEemNp4to5ssXKA" confirmationNeeded="false" name="Local">
+    <contextParameter xmi:id="_g6UeERTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Host" prompt="Conexion_SQL_LIMS_Host?" promptNeeded="false" type="id_String" value="&quot;10.97.1.16&quot;"/>
+    <contextParameter xmi:id="_g6UeEhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Usuario" prompt="Conexion_SQL_LIMS_Usuario?" promptNeeded="false" type="id_String" value="&quot;svc.cmo.gestion&quot;"/>
+    <contextParameter xmi:id="_g6UeExTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Pass" prompt="Conexion_SQL_LIMS_Pass?" promptNeeded="false" type="id_Password" value="n7etV+TjU7kD3ddTbPWLfw=="/>
+    <contextParameter xmi:id="_g6UeFBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Puerto" prompt="Conexion_SQL_LIMS_Puerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_g6UeFRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Esquema" prompt="Conexion_SQL_LIMS_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g6UeFhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_BaseDeDatos" prompt="Conexion_SQL_LIMS_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_CMORO&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6UeFxTqEemNp4to5ssXKA" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_g6UeGBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Host" prompt="Conexion_SQL_LIMS_Host?" promptNeeded="false" type="id_String" value="&quot;ARCMOSQLVM01&quot;"/>
+    <contextParameter xmi:id="_g6UeGRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Usuario" prompt="Conexion_SQL_LIMS_Usuario?" promptNeeded="false" type="id_String" value="&quot;svc.cmo.gestion&quot;"/>
+    <contextParameter xmi:id="_g6UeGhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Pass" prompt="Conexion_SQL_LIMS_Pass?" promptNeeded="false" type="id_Password" value="n7etV+TjU7kD3ddTbPWLfw=="/>
+    <contextParameter xmi:id="_g6UeGxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Puerto" prompt="Conexion_SQL_LIMS_Puerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_g6UeHBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Esquema" prompt="Conexion_SQL_LIMS_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g6UeHRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_BaseDeDatos" prompt="Conexion_SQL_LIMS_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_CMORO&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6UeHhTqEemNp4to5ssXKA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_g6UeHxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Host" prompt="Conexion_SQL_LIMS_Host?" promptNeeded="false" type="id_String" value="&quot;ARCMOSQLVM01&quot;"/>
+    <contextParameter xmi:id="_g6UeIBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Usuario" prompt="Conexion_SQL_LIMS_Usuario?" promptNeeded="false" type="id_String" value="&quot;svc.cmo.gestion&quot;"/>
+    <contextParameter xmi:id="_g6UeIRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Pass" prompt="Conexion_SQL_LIMS_Pass?" promptNeeded="false" type="id_Password" value="n7etV+TjU7kD3ddTbPWLfw=="/>
+    <contextParameter xmi:id="_g6UeIhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Puerto" prompt="Conexion_SQL_LIMS_Puerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_g6UeIxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_Esquema" prompt="Conexion_SQL_LIMS_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g6UeJBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_LIMS_BaseDeDatos" prompt="Conexion_SQL_LIMS_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;LIMS_YGC_CMORO&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

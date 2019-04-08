@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Desa" jobType="Standard">
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow&quot;"/>
+    <contextParameter comment="IP o nombre host Cloud" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;https://workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter comment="IP o nombre host On Premise" name="BIZhostOP" prompt="BIZhostOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoDDOP" prompt="BIZprocesoDDOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Workflow&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoWorkflowOP" prompt="BIZprocesoWorkflowOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Workflow&quot;"/>
+    <contextParameter comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="30000"/>
+    <contextParameter comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+    <contextParameter comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="Final" name="Final" prompt="Final?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_Creados" prompt="Middleware_Excel_Log_Creados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Logs/LogCasosCreados.xlsx"/>
+    <contextParameter comment="" name="Middleware_SalidaCSV" prompt="Middleware_SalidaCSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_Directory" value="C:\BackSpace\Historicos"/>
+    <contextParameter comment="" name="Middleware_XML_Origen" prompt="Middleware_XML_Origen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML P_TipoOrigen.xml"/>
+    <contextParameter comment="" name="Middleware_ExcelSKU" prompt="Middleware_ExcelSKU?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_String" value="C:/BackSpace/Middleware - Prod/Logs/RegistrosSKU.xlsx"/>
+    <contextParameter comment="" name="Middleware_Excel_Importacion" prompt="Middleware_Excel_Importacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Excel carga casos/Carga casos.xlsx"/>
+    <contextParameter comment="" name="Middleware_Excel_Rechazados" prompt="Middleware_Excel_Rechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Rechazados.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_FlagFoto" prompt="Middleware_XML_FlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML P_FlagFoto.xml"/>
+    <contextParameter comment="" name="Middleware_XML_Pais" prompt="Middleware_XML_Pais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML P_Pais.xml"/>
+    <contextParameter comment="" name="Publicaciones_Excel" prompt="Publicaciones_Excel?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Extracción de cloud/Excel Informacion de proceso.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_ProductosCargados" prompt="Middleware_XML_ProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML M_ProductosCargados.xml"/>
+    <contextParameter comment="" name="Middleware__ExcelExportacion" prompt="Middleware__ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Casos exportación.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_Temp_Agrupado" prompt="Middleware_XML_Temp_Agrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML Temp URL Foto.xml"/>
+    <contextParameter comment="" name="Temporal_ExtelDatamart" prompt="Temporal_ExtelDatamart?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_String" value="C:/BackSpace/Temporal/Datamart-Prod.csv"/>
+    <contextParameter comment="" name="Middleware_XML_DDRegistrosCargados" prompt="Middleware_XML_DDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_Fallidos" prompt="Middleware_Excel_Log_Fallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Logs/LogCasosFallidos.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_Programacion" prompt="Middleware_XML_Programacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Jobs/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_XML" prompt="Middleware_Excel_Log_XML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Prod/Logs/LogXML.xlsx"/>
+    <contextParameter comment="" name="Temporal_XMLDatamart" prompt="Temporal_XMLDatamart?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Temporal/Jobs/XML Schema M_Informaciondeproceso.xml"/>
+    <contextParameter comment="" name="Publicaciones_XML_GetEntities" prompt="Publicaciones_XML_GetEntities?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Extraccion de cloud/Job/Get Entities M_Informaciondeproceso.xml"/>
+    <contextParameter comment="" name="Publicaciones_CSV" prompt="Publicaciones_CSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Extracción de cloud/CSV Informacion de proceso.csv"/>
+    <contextParameter comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="1"/>
+    <contextParameter comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Boolean" value="true"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-test&quot;"/>
+    <contextParameter comment="IP o nombre host Cloud" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;https://test-workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter comment="IP o nombre host On Premise" name="BIZhostOP" prompt="BIZhostOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoDDOP" prompt="BIZprocesoDDOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoWorkflowOP" prompt="BIZprocesoWorkflowOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Workflow&quot;"/>
+    <contextParameter comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2000"/>
+    <contextParameter comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+    <contextParameter comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="Final" name="Final" prompt="Final?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_Creados" prompt="Middleware_Excel_Log_Creados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Logs/LogCasosCreados.xlsx"/>
+    <contextParameter comment="" name="Middleware_SalidaCSV" prompt="Middleware_SalidaCSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_Directory" value="C:\BackSpace\Historicos"/>
+    <contextParameter comment="" name="Middleware_XML_Origen" prompt="Middleware_XML_Origen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML P_TipoOrigen.xml"/>
+    <contextParameter comment="" name="Middleware_ExcelSKU" prompt="Middleware_ExcelSKU?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_String" value="C:/BackSpace/Middleware/Logs/RegistrosSKU.xlsx"/>
+    <contextParameter comment="" name="Middleware_Excel_Importacion" prompt="Middleware_Excel_Importacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Excel carga casos/Carga casos.xlsx"/>
+    <contextParameter comment="" name="Middleware_Excel_Rechazados" prompt="Middleware_Excel_Rechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Rechazados.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_FlagFoto" prompt="Middleware_XML_FlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML P_FlagFoto.xml"/>
+    <contextParameter comment="" name="Middleware_XML_Pais" prompt="Middleware_XML_Pais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML P_Pais.xml"/>
+    <contextParameter comment="" name="Publicaciones_Excel" prompt="C:/BackSpace/Falabella/Extracción de cloud/Excel Informacion de proceso.xlsx" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Extracción de cloud/Excel Informacion de proceso.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_ProductosCargados" prompt="Middleware_XML_ProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML M_ProductosCargados.xml"/>
+    <contextParameter comment="" name="Middleware__ExcelExportacion" prompt="Middleware__ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Excel exportados/Casos exportación.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_Temp_Agrupado" prompt="Middleware_XML_Temp_Agrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML Temp URL Foto.xml"/>
+    <contextParameter comment="" name="Temporal_ExtelDatamart" prompt="Temporal_ExtelDatamart?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_String" value="C:/BackSpace/Temporal/Datamart-Test.csv"/>
+    <contextParameter comment="" name="Middleware_XML_DDRegistrosCargados" prompt="Middleware_XML_DDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_Fallidos" prompt="Middleware_Excel_Log_Fallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Logs/LogCasosFallidos.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_Programacion" prompt="Middleware_XML_Programacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Jobs/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_XML" prompt="Middleware_Excel_Log_XML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware - Test/Logs/LogXML.xlsx"/>
+    <contextParameter comment="" name="Temporal_XMLDatamart" prompt="Temporal_XMLDatamart?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Temporal/Jobs/XML Schema M_Informaciondeproceso.xml"/>
+    <contextParameter comment="" name="Publicaciones_XML_GetEntities" prompt="Publicaciones_XML_GetEntities?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Extracción de cloud/Get Entities M_Informaciondeproceso.xml"/>
+    <contextParameter comment="" name="Publicaciones_CSV" prompt="Publicaciones_CSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Extracción de cloud/CSV Informacion de proceso.csv"/>
+    <contextParameter comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Boolean" value="true"/>
+  </context>
+  <context confirmationNeeded="false" name="Desa">
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+    <contextParameter comment="IP o nombre host Cloud" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="IP o nombre host On Premise" name="BIZhostOP" prompt="BIZhostOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoDDOP" prompt="BIZprocesoDDOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoWorkflowOP" prompt="BIZprocesoWorkflowOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+    <contextParameter comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="30000"/>
+    <contextParameter comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="100"/>
+    <contextParameter comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="Final" name="Final" prompt="Final?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="100"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_Creados" prompt="Middleware_Excel_Log_Creados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Logs/LogCasosCreados.xlsx"/>
+    <contextParameter comment="" name="Middleware_SalidaCSV" prompt="Middleware_SalidaCSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_Directory" value="C:/BackSpace/Falabella/Dia a dia/"/>
+    <contextParameter comment="" name="Middleware_XML_Origen" prompt="Middleware_XML_Origen?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_TipoOrigen.xml"/>
+    <contextParameter comment="" name="Middleware_ExcelSKU" prompt="Middleware_ExcelSKU?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_String" value="C:/BackSpace/Middleware/Logs/RegistrosSKU.xlsx"/>
+    <contextParameter comment="" name="Middleware_Excel_Importacion" prompt="Middleware_Excel_Importacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Excel carga casos/Carga casos.xlsx"/>
+    <contextParameter comment="" name="Middleware_Excel_Rechazados" prompt="Middleware_Excel_Rechazados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Rechazados.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_FlagFoto" prompt="Middleware_XML_FlagFoto?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_FlagFoto.xml"/>
+    <contextParameter comment="" name="Middleware_XML_Pais" prompt="Middleware_XML_Pais?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML P_Pais.xml"/>
+    <contextParameter comment="" name="Publicaciones_Excel" prompt="Publicaciones_Excel?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Extracción de cloud/Excel Informacion de proceso.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_ProductosCargados" prompt="Middleware_XML_ProductosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML M_ProductosCargados.xml"/>
+    <contextParameter comment="" name="Middleware__ExcelExportacion" prompt="Middleware__ExcelExportacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Casos exportación.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_Temp_Agrupado" prompt="Middleware_XML_Temp_Agrupado?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Jobs/XML Temp URL Foto.xml"/>
+    <contextParameter comment="" name="Temporal_ExtelDatamart" prompt="Temporal_ExtelDatamart?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_String" value="C:/BackSpace/Temporal/Datamart-Desa.csv"/>
+    <contextParameter comment="" name="Middleware_XML_DDRegistrosCargados" prompt="Middleware_XML_DDRegistrosCargados?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Día a día/XML Get Entities M_DDRegistroTareas.xml"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_Fallidos" prompt="Middleware_Excel_Log_Fallidos?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Logs/LogCasosFallidos.xlsx"/>
+    <contextParameter comment="" name="Middleware_XML_Programacion" prompt="Middleware_XML_Programacion?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Día a día/XML Get Entities M_DDProgramacion.xml"/>
+    <contextParameter comment="" name="Middleware_Excel_Log_XML" prompt="Middleware_Excel_Log_XML?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Middleware/Logs/LogXML.xlsx"/>
+    <contextParameter comment="" name="Temporal_XMLDatamart" prompt="Temporal_XMLDatamart?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Temporal/Jobs/XML Schema M_Informaciondeproceso.xml"/>
+    <contextParameter comment="" name="Publicaciones_XML_GetEntities" prompt="Publicaciones_XML_GetEntities?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Extracción de cloud/Get Entities M_Informaciondeproceso.xml"/>
+    <contextParameter comment="" name="Publicaciones_CSV" prompt="Publicaciones_CSV?" promptNeeded="false" repositoryContextId="__5W10JW5Eei_ifUMTb-yQw" type="id_File" value="C:/BackSpace/Falabella/Extracción de cloud/CSV Informacion de proceso.csv"/>
+    <contextParameter comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Boolean" value="true"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/BackSpace/Programas/TOS_DI-20180116_1512-V6.5.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_cN4NEIagEeioo_5pyUlH2Q" name="DataOperation"/>
+    <routinesParameter id="_cPKmgIagEeioo_5pyUlH2Q" name="Mathematical"/>
+    <routinesParameter id="_cPUXgIagEeioo_5pyUlH2Q" name="Numeric"/>
+    <routinesParameter id="_cPfWoIagEeioo_5pyUlH2Q" name="Relational"/>
+    <routinesParameter id="_cPkPIIagEeioo_5pyUlH2Q" name="StringHandling"/>
+    <routinesParameter id="_cPyRkIagEeioo_5pyUlH2Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_cP_F4IagEeioo_5pyUlH2Q" name="TalendDate"/>
+    <routinesParameter id="_cQajsIagEeioo_5pyUlH2Q" name="TalendStringUtil"/>
+    <routinesParameter id="_cQNIUIagEeioo_5pyUlH2Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if(context.PrimeraEjecucion){&#xA;&#x9;context.Final = context.Aumento;&#xA;&#x9;context.PrimeraEjecucion = false;&#xA;}&#xA;else{&#xA;&#x9;context.Inicial = context.Final;&#xA;&#x9;context.Final += context.Aumento;&#xA;&#x9;context.CantidadActual = (long)0;&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Aumentar rangos"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Actualizar_EstadoTarea_Hijo"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Prod"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_xAQwkEHREemYI6Im2Psx8A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Llamar hijo"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

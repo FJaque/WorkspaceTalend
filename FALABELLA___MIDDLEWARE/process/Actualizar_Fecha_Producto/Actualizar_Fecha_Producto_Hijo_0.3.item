@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="IP o nombre host Cloud" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;https://workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow&quot;"/>
+    <contextParameter comment="IP o nombre host On Premise" name="BIZhostOP" prompt="BIZhostOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoDDOP" prompt="BIZprocesoDDOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Workflow&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoWorkflowOP" prompt="BIZprocesoWorkflowOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Workflow&quot;"/>
+    <contextParameter comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="30000"/>
+    <contextParameter comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+    <contextParameter comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="1"/>
+    <contextParameter comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Final" name="Final" prompt="Final?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="IP o nombre host Cloud" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;https://test-workflow-falabella.bizagi.com&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;workflow-test&quot;"/>
+    <contextParameter comment="IP o nombre host On Premise" name="BIZhostOP" prompt="BIZhostOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoDDOP" prompt="BIZprocesoDDOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoWorkflowOP" prompt="BIZprocesoWorkflowOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Workflow&quot;"/>
+    <contextParameter comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2000"/>
+    <contextParameter comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+    <contextParameter comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Final" name="Final" prompt="Final?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="2500"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="IP o nombre host Cloud" name="BIZhost" prompt="BIZhost?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoDD" prompt="BIZprocesoDD?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso Cloud" name="BIZprocesoWorkflow" prompt="BIZprocesoWorkflow?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+    <contextParameter comment="IP o nombre host On Premise" name="BIZhostOP" prompt="BIZhostOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;http://34.196.15.115&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoDDOP" prompt="BIZprocesoDDOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Marketing&quot;"/>
+    <contextParameter comment="Nombre del proceso On Premise" name="BIZprocesoWorkflowOP" prompt="BIZprocesoWorkflowOP?" promptNeeded="false" repositoryContextId="_IZLd4KY5EeiaUsLiEik8uA" type="id_String" value="&quot;Desa_Workflow&quot;"/>
+    <contextParameter comment="Máximo de rango" name="Limite" prompt="Limite?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="30000"/>
+    <contextParameter comment="Aumento de búsquedas" name="Aumento" prompt="Aumento?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="100"/>
+    <contextParameter comment="Inicial" name="Inicial" prompt="Inicial?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="Cantidad de registros" name="CantidadActual" prompt="CantidadActual?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="0"/>
+    <contextParameter comment="" name="PrimeraEjecucion" prompt="PrimeraEjecucion?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Boolean" value="true"/>
+    <contextParameter comment="Final" name="Final" prompt="Final?" promptNeeded="false" repositoryContextId="_6xF_kAUXEem3i6rCEnyeUw" type="id_Long" value="100"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/BackSpace/Programas/TOS_DI-20180116_1512-V6.5.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_cN4NEIagEeioo_5pyUlH2Q" name="DataOperation"/>
+    <routinesParameter id="_cPKmgIagEeioo_5pyUlH2Q" name="Mathematical"/>
+    <routinesParameter id="_cPUXgIagEeioo_5pyUlH2Q" name="Numeric"/>
+    <routinesParameter id="_cPfWoIagEeioo_5pyUlH2Q" name="Relational"/>
+    <routinesParameter id="_cPkPIIagEeioo_5pyUlH2Q" name="StringHandling"/>
+    <routinesParameter id="_cPyRkIagEeioo_5pyUlH2Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_cP_F4IagEeioo_5pyUlH2Q" name="TalendDate"/>
+    <routinesParameter id="_cQajsIagEeioo_5pyUlH2Q" name="TalendStringUtil"/>
+    <routinesParameter id="_cQNIUIagEeioo_5pyUlH2Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;*** Actualizando registros del &quot;+context.Inicial+&quot; al &quot;+context.Final+&quot; ***&quot;);&#xA;context.PrimeraEjecucion = false;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" value="&quot;192.168.0.100&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.BIZhost+&quot;/&quot;+context.BIZprocesoWorkflow+&quot;/webservices/entitymanagersoa.asmx&quot;"/>
+    <elementParameter field="TEXT" name="ACTION" value="&quot;http://tempuri.org/getEntitiesUsingSchema&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" value="" show="false"/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?>&#xD;&#xA;&lt;soapenv:Envelope xmlns:soapenv=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; &#xD;&#xA;&#x9;xmlns:tem=\&quot;http://tempuri.org/\&quot;>&#xD;&#xA;&#x9;&lt;soapenv:Header/>&#xD;&#xA;&#x9;&lt;soapenv:Body>&#xD;&#xA;&#x9;&#x9;&lt;tem:getEntitiesUsingSchema>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;tem:entitiesInfo>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;BizAgiWSParam>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;EntityData>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;EntityName>M_ProductosCargados&lt;/EntityName>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;Filters>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;![CDATA[&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Fechaingresorecepcion IS NULL&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AND FechaIngreso IS NOT NULL&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;]]>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/Filters>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/EntityData>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/BizAgiWSParam>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/tem:entitiesInfo>&#xD;&#xA;&#x9;&#x9;&#x9;&lt;tem:schema>&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;xs:schema attributeFormDefault=\&quot;qualified\&quot; elementFormDefault=\&quot;qualified\&quot; &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;xmlns:xs=\&quot;http://www.w3.org/2001/XMLSchema\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;M_ProductosCargados\&quot;>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:element name=\&quot;FechaIngreso\&quot; type=\&quot;xs:string\&quot; minOccurs=\&quot;0\&quot; maxOccurs=\&quot;1\&quot;>&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:sequence>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;xs:attribute name=\&quot;key\&quot; type=\&quot;xs:int\&quot;>&lt;/xs:attribute>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:complexType>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/xs:element>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/xs:schema>&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/tem:schema>&#xD;&#xA;&#x9;&#x9;&lt;/tem:getEntitiesUsingSchema>&#xD;&#xA;&#x9;&lt;/soapenv:Body>&#xD;&#xA;&lt;/soapenv:Envelope>&quot;"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="true"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SOAP Bizagi"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_1">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Soap"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Transformaciones"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="salida" name="salida">
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaDate" nullable="false" pattern="&quot;MM/dd/yyyy h:mm:ss aa&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row5" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Soap" expression="" type="id_Document" xpath="row5/Soap">
+          <children name="soap:Envelope" type="id_String" xpath="row5.Soap:/soap:Envelope" main="true">
+            <children name="soap:Body" type="id_String" xpath="row5.Soap:/soap:Envelope/soap:Body" main="true">
+              <children name="getEntitiesUsingSchemaResponse" type="id_String" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse" main="true">
+                <children name="getEntitiesUsingSchemaResult" type="id_String" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult" main="true">
+                  <children name="BizAgiWSResponse" type="id_String" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse" main="true">
+                    <children name="Entities" type="id_String" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities" main="true">
+                      <children name="M_ProductosCargados" type="id_String" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_ProductosCargados" loop="true" main="true">
+                        <children name="key" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_ProductosCargados/@key" nodeType="ATTRIBUT"/>
+                        <children name="FechaIngreso" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_ProductosCargados/FechaIngreso"/>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="salida">
+        <nodes name="key" expression=" [row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_ProductosCargados/@key]" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="salida/key"/>
+        <nodes name="FechaDate" expression="Var.FechaDate" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="salida/FechaDate" pattern="&quot;MM/dd/yyyy h:mm:ss aa&quot;"/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes name="FechaIngreso" expression=" [row5.Soap:/soap:Envelope/soap:Body/getEntitiesUsingSchemaResponse/getEntitiesUsingSchemaResult/BizAgiWSResponse/Entities/M_ProductosCargados/FechaIngreso]" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2 //@node.3/@nodeData/@connections.6" incomingConnections="//@node.3/@nodeData/@connections.0" nullable="true"/>
+        <nodes name="CantidadSlashs" expression="Var.FechaIngreso.length() - Var.FechaIngreso.replaceAll(&quot;/&quot;,&quot;&quot;).length() " type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.3" incomingConnections="//@node.3/@nodeData/@connections.2"/>
+        <nodes name="CantidadGuiones" expression="Var.FechaIngreso.length() - Var.FechaIngreso.replaceAll(&quot;/&quot;,&quot;&quot;).length() " type="id_Integer"/>
+        <nodes name="TipoFecha" expression="Var.CantidadSlashs == 0&#xD;&#xA;?&#xA;&#x9;Var.CantidadGuiones == 2&#xA;&#x9;?&#xD;&#xA;&#x9;&quot;Corta sin fecha&quot;&#xA;&#x9;:&#xA;&#x9;&quot;Corta con fecha&quot;&#xD;&#xA;:&#xD;&#xA;&quot;Larga&quot; " type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" incomingConnections="//@node.3/@nodeData/@connections.3"/>
+        <nodes name="FechaDate" expression="Var.TipoFecha.equals(&quot;Corta sin fecha&quot;)&#xD;&#xA;?&#xA;&#x9;TalendDate.parseDate(&quot;MMM dd yyyy h:mmaa&quot;, Var.FechaIngreso)&#xD;&#xA;:&#xA;&#x9;Var.TipoFecha.equals(&quot;Corta con fecha&quot;)&#xA;&#x9;?&#xA;&#x9;TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, Var.FechaIngreso) &#xA;&#x9;:&#xD;&#xA;&#x9;TalendDate.parseDate(&quot;M/d/yyyy hh:mm:ss aa&quot;, Var.FechaIngreso) " type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.5" incomingConnections="//@node.3/@nodeData/@connections.4 //@node.3/@nodeData/@connections.6"/>
+      </varTables>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" target="//@node.3/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.0" target="//@node.3/@nodeData/@varTables.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.1" target="//@node.3/@nodeData/@varTables.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.3" target="//@node.3/@nodeData/@varTables.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.0" target="//@node.3/@nodeData/@varTables.0/@nodes.4"/>
+    </nodeData>
+  </node>
+  <node componentName="tAdvancedFileOutputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAdvancedFileOutputXML_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/BackSpace/Falabella/Actualizar Estado Tarea/XML Temp.xml&quot;"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/soapenv:Envelope"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="xmlns:soapenv"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value="http://schemas.xmlsoap.org/soap/envelope/"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri"/>
+      <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="PATH" value="xmlns:tem"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value="http://tempuri.org/"/>
+      <elementValue elementRef="ATTRIBUTE" value="attri"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Header"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body/tem:saveEntity"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body/tem:saveEntity/tem:entityInfo"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body/tem:saveEntity/tem:entityInfo/BizAgiWSParam"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="8"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body/tem:saveEntity/tem:entityInfo/BizAgiWSParam/Entities"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="9"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body/tem:saveEntity/tem:entityInfo/BizAgiWSParam/Entities/M_ProductosCargados"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="10"/>
+      <elementValue elementRef="PATH" value="key"/>
+      <elementValue elementRef="COLUMN" value="key"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="attri"/>
+      <elementValue elementRef="ORDER" value="11"/>
+      <elementValue elementRef="PATH" value="/soapenv:Envelope/soapenv:Body/tem:saveEntity/tem:entityInfo/BizAgiWSParam/Entities/M_ProductosCargados/Fechaingresorecepcion"/>
+      <elementValue elementRef="COLUMN" value="FechaDate"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="12"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="MERGE" value="false"/>
+    <elementParameter field="CHECK" name="PRETTY_COMPACT" value="false"/>
+    <elementParameter field="CHECK" name="FILE_VALID" value="false"/>
+    <elementParameter field="RADIO" name="DTD_VALID" value="true" show="false"/>
+    <elementParameter field="TEXT" name="DTD_NAME" value="&quot;Root&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DTD_SYSTEMID" value="&quot;Talend.dtd&quot;" show="false"/>
+    <elementParameter field="RADIO" name="XSL_VALID" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XSL_TYPE" value="&quot;text/xsl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XSL_HREF" value="&quot;Talend.xsl&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
+    <elementParameter field="CHECK" name="ADD_EMPTY_ATTRIBUTE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_UNMAPPED_ATTRIBUTE" value="false"/>
+    <elementParameter field="CHECK" name="ADD_DOCUMENT_AS_NODE" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUT_AS_XSD" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="XMLNODE_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Armar XML"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="salida" name="tAdvancedFileOutputXML_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="key" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaDate" nullable="false" pattern="&quot;MM/dd/yyyy h:mm:ss aa&quot;" precision="-1" sourceType="id_Date" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="Cantidad"/>
+      <elementValue elementRef="FUNCTION" value="count"/>
+      <elementValue elementRef="INPUT_COLUMN" value="key"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Contar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="conteo"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column comment="" key="false" length="-1" name="Cantidad" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;CantidadFilas&quot;"/>
+      <elementValue elementRef="VALUE" value="conteo1.Cantidad"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Guardar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1">
+      <column comment="" key="false" length="-1" name="Cantidad" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/BackSpace/Falabella/Actualizar Estado Tarea/XML Temp.xml&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="saveEntities"/>
+      <elementValue elementRef="QUERY" value="&quot;/&quot;"/>
+      <elementValue elementRef="NODECHECK" value="true"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_DTD" value="false"/>
+    <elementParameter field="FILE" name="TMP_FILENAME" value="&quot;C:/BackSpace/Programas/TOS_DI-20180116_1512-V6.5.1/workspace/temp.xml&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Leer XML Armado"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputXML_1">
+      <column comment="" key="false" length="-1" name="saveEntities" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="saveEntities" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="saveEntities"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="saveEntities" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" value="&quot;192.168.0.100&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.BIZhost+&quot;/&quot;+context.BIZprocesoWorkflow+&quot;/webservices/entitymanagersoa.asmx&quot;"/>
+    <elementParameter field="TEXT" name="ACTION" value="&quot;http://tempuri.org/saveEntity&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="true"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" value="saveEntities"/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&lt;?xml version='1.0' encoding='utf-8'?>&#xD;&#xA;&lt;soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' &#xD;&#xA;    xmlns:tem='http://tempuri.org/'>&#xD;&#xA;    &lt;soapenv:Header/>&#xD;&#xA;    &lt;soapenv:Body>&#xD;&#xA;        &lt;tem:getEntitiesUsingSchema>&#xD;&#xA;&#xD;&#xA;            &lt;tem:entitiesInfo>&#xD;&#xA;&#xD;&#xA;                &lt;BizAgiWSParam>&#xD;&#xA;                    &lt;EntityData>&#xD;&#xA;                        &lt;EntityName>M_ProductosCargados&lt;/EntityName>&#xD;&#xA;                        &lt;Filters>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;![CDATA[&#xD;&#xA;        &#x9;                    (Evento IS NULL OR Evento = '') AND&#xD;&#xA;                &#x9;            SKU IN (&quot;+((String)globalMap.get(&quot;ListaSKU&quot;))+&quot;)&#xD;&#xA;                        &#x9; ]]>&#xD;&#xA;                        &lt;/Filters>&#xD;&#xA;                    &lt;/EntityData>&#xD;&#xA;                &lt;/BizAgiWSParam>&#xD;&#xA;&#xD;&#xA;            &lt;/tem:entitiesInfo>&#xD;&#xA;&#xD;&#xA;            &lt;tem:schema>&#xD;&#xA;&#xD;&#xA;                &lt;xs:schema attributeFormDefault='qualified' elementFormDefault='qualified' &#xD;&#xA;                    xmlns:xs='http://www.w3.org/2001/XMLSchema'>&#xD;&#xA;                    &lt;xs:element name='M_ProductosCargados'>&#xD;&#xA;                        &lt;xs:complexType>&#xD;&#xA;                            &lt;xs:sequence>&#xD;&#xA;                                &lt;xs:element minOccurs='0' maxOccurs='1' name='SKU' type='xs:string' />&#xD;&#xA;                            &lt;/xs:sequence>&#xD;&#xA;                        &lt;/xs:complexType>&#xD;&#xA;                    &lt;/xs:element>&#xD;&#xA;                &lt;/xs:schema>&#xD;&#xA;&#xD;&#xA;            &lt;/tem:schema>&#xD;&#xA;        &lt;/tem:getEntitiesUsingSchema>&#xD;&#xA;    &lt;/soapenv:Body>&#xD;&#xA;&lt;/soapenv:Envelope>&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="true"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SOAP Actualizar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_2">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Soap"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="respuestaSaveEntities"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/BackSpace/Falabella/Actualizar Fecha Producto/Log Fecha.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1600" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Actualizar_Fecha_Producto_Padre"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Prod"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_VoShkEQ8EemL4PT3QVrLpQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Llamar padre"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSOAP_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSOAP_1" offsetLabelX="0" offsetLabelY="0" source="tSOAP_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="salida" lineStyle="0" metaname="salida" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tAdvancedFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="salida" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tAdvancedFileOutputXML_1" offsetLabelX="0" offsetLabelY="0" source="tAdvancedFileOutputXML_1" target="tAggregateRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IdEstadoTarea"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="conteo1" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="conteo1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tFileInputXML_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;CantidadFilas&quot;) != null &amp;&amp; &#xA;((int)globalMap.get(&quot;CantidadFilas&quot;)) > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tSOAP_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tSOAP_2" offsetLabelX="0" offsetLabelY="0" source="tSOAP_2" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="respuestaSaveEntities1" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="respuestaSaveEntities1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tRunJob_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

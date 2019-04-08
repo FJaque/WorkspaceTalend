@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_g6RawBTqEemNp4to5ssXKA" confirmationNeeded="false" name="Local">
+    <contextParameter xmi:id="_g6RawRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Host" prompt="Conexion_SQL_DWH_Host?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter xmi:id="_g6RawhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Usuario" prompt="Conexion_SQL_DWH_Usuario?" promptNeeded="false" type="id_String" value="&quot;sa&quot;"/>
+    <contextParameter xmi:id="_g6RawxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Pass" prompt="Conexion_SQL_DWH_Pass?" promptNeeded="false" type="id_Password" value="nHTnjOxOxCwRQoDWHcLh9w=="/>
+    <contextParameter xmi:id="_g6RaxBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Puerto" prompt="Conexion_SQL_DWH_Puerto?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_g6RaxRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Esquema" prompt="Conexion_SQL_DWH_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g6RaxhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_BaseDeDatos" prompt="Conexion_SQL_DWH_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;Yamana_CM_DWH&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6RaxxTqEemNp4to5ssXKA" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_g6RayBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Host" prompt="Conexion_SQL_DWH_Host?" promptNeeded="false" type="id_String" value="&quot;STGSQLTSTVM01&quot;"/>
+    <contextParameter xmi:id="_g6RayRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Usuario" prompt="Conexion_SQL_DWH_Usuario?" promptNeeded="false" type="id_String" value="&quot;svc.cmo.gestion&quot;"/>
+    <contextParameter xmi:id="_g6RayhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Pass" prompt="Conexion_SQL_DWH_Pass?" promptNeeded="false" type="id_Password" value="n7etV+TjU7kD3ddTbPWLfw=="/>
+    <contextParameter xmi:id="_g6RayxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Puerto" prompt="Conexion_SQL_DWH_Puerto?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_g6RazBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Esquema" prompt="Conexion_SQL_DWH_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g6RazRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_BaseDeDatos" prompt="Conexion_SQL_DWH_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;GestionCMO_DW&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6RazhTqEemNp4to5ssXKA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_g6RazxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Host" prompt="Conexion_SQL_DWH_Host?" promptNeeded="false" type="id_String" value="&quot;STGSQLTSTVM01&quot;"/>
+    <contextParameter xmi:id="_g6Ra0BTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Usuario" prompt="Conexion_SQL_DWH_Usuario?" promptNeeded="false" type="id_String" value="&quot;svc.cmo.gestion&quot;"/>
+    <contextParameter xmi:id="_g6Ra0RTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Pass" prompt="Conexion_SQL_DWH_Pass?" promptNeeded="false" type="id_Password" value="n7etV+TjU7kD3ddTbPWLfw=="/>
+    <contextParameter xmi:id="_g6Ra0hTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Puerto" prompt="Conexion_SQL_DWH_Puerto?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_g6Ra0xTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_Esquema" prompt="Conexion_SQL_DWH_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g6Ra1BTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DWH_BaseDeDatos" prompt="Conexion_SQL_DWH_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;GestionCMO_DW&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

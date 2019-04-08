@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.talend.designer.runprocess.jobLaunchConfiguration">
+<stringAttribute key="CURRENT_PROJECT_NAME" value="Falabella_-_Middleware"/>
+<stringAttribute key="TALEND_JOB_ID" value="_xAQwkEHREemYI6Im2Psx8A"/>
+<stringAttribute key="TALEND_JOB_NAME" value="Actualizar_EstadoTarea_Hijo"/>
+<stringAttribute key="TALEND_JOB_VERSION" value="0.8"/>
+</launchConfiguration>

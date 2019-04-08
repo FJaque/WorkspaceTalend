@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_PACi8EvWEem7sbqDheRj3g" id="_NcbzoEwBEem9UOrZe8DMPQ" label="Refineria_Barra" version="0.1" statusCode="" item="_PADKAUvWEem7sbqDheRj3g" displayName="Refineria_Barra">
+    <author href="../../talend.project#_UOlCsv7aEei9cJHqoLwr0g"/>
+    <additionalProperties xmi:id="_PAHbcEvWEem7sbqDheRj3g" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_PAHbcUvWEem7sbqDheRj3g" key="created_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_PAHbckvWEem7sbqDheRj3g" key="created_date" value="2019-03-21T15:46:09.361-0300"/>
+    <additionalProperties xmi:id="_PAHbc0vWEem7sbqDheRj3g" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_PAHbdEvWEem7sbqDheRj3g" key="modified_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_PAHbdUvWEem7sbqDheRj3g" key="modified_date" value="2019-04-02T15:59:49.762-0300"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_NdeVcEwBEem9UOrZe8DMPQ" path="Refineria" locked="true" lockDate="2019-04-02T15:59:49.762-0300">
+    <locker href="../../talend.project#_UOlCsv7aEei9cJHqoLwr0g"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_PADKAUvWEem7sbqDheRj3g" property="_PACi8EvWEem7sbqDheRj3g" state="_NdeVcEwBEem9UOrZe8DMPQ">
+    <process href="Refineria_Barra_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

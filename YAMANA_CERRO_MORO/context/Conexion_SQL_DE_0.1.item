@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_g5KAcBTqEemNp4to5ssXKA" confirmationNeeded="false" name="Local">
+    <contextParameter xmi:id="_g5KAcRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Host" prompt="Conexion_SQL_DE_Host?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter xmi:id="_g5KAchTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Usuario" prompt="Conexion_SQL_DE_Usuario?" promptNeeded="false" type="id_String" value="&quot;sa&quot;"/>
+    <contextParameter xmi:id="_g5KAcxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Pass" prompt="Conexion_SQL_DE_Pass?" promptNeeded="false" type="id_Password" value="nHTnjOxOxCwRQoDWHcLh9w=="/>
+    <contextParameter xmi:id="_g5KAdBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Puerto" prompt="Conexion_SQL_DE_Puerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_g5KAdRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Esquema" prompt="Conexion_SQL_DE_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g5KAdhTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_BaseDeDatos" prompt="Conexion_SQL_DE_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;Yamana_CM_DE&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g5KAdxTqEemNp4to5ssXKA" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_g5KAeBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Host" prompt="Conexion_SQL_DE_Host?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter xmi:id="_g5KAeRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Usuario" prompt="Conexion_SQL_DE_Usuario?" promptNeeded="false" type="id_String" value="&quot;sa&quot;"/>
+    <contextParameter xmi:id="_g5KAehTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Pass" prompt="Conexion_SQL_DE_Pass?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_g5KAexTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Puerto" prompt="Conexion_SQL_DE_Puerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_g5KAfBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Esquema" prompt="Conexion_SQL_DE_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g5KAfRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_BaseDeDatos" prompt="Conexion_SQL_DE_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;Yamana_CM_DE&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g5KAfhTqEemNp4to5ssXKA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_g5KAfxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Host" prompt="Conexion_SQL_DE_Host?" promptNeeded="false" type="id_String" value="&quot;STGSQLTSTVM01&quot;"/>
+    <contextParameter xmi:id="_g5KAgBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Usuario" prompt="Conexion_SQL_DE_Usuario?" promptNeeded="false" type="id_String" value="&quot;svc.cmo.gestion&quot;"/>
+    <contextParameter xmi:id="_g5KAgRTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Pass" prompt="Conexion_SQL_DE_Pass?" promptNeeded="false" type="id_Password" value="n7etV+TjU7kD3ddTbPWLfw=="/>
+    <contextParameter xmi:id="_g5KAghTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Puerto" prompt="Conexion_SQL_DE_Puerto?" promptNeeded="false" type="id_String" value="&quot;1433&quot;"/>
+    <contextParameter xmi:id="_g5KAgxTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_Esquema" prompt="Conexion_SQL_DE_Esquema?" promptNeeded="false" type="id_String" value="&quot;dbo&quot;"/>
+    <contextParameter xmi:id="_g5KAhBTqEemNp4to5ssXKA" comment="" name="Conexion_SQL_DE_BaseDeDatos" prompt="Conexion_SQL_DE_BaseDeDatos?" promptNeeded="false" type="id_String" value="&quot;GestionCMO_DE&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Bga-0Ch5EemOc_Oi3N3v-Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_JATQwCh5EemOc_Oi3N3v-Q" comment="" name="Conexion_TW_URL" prompt="Conexion_TW_URL?" promptNeeded="false" type="id_String" value="&quot;https://backspace.teamwork.com/&quot;"/>
+  <contextParameter xmi:id="_JATQwSh5EemOc_Oi3N3v-Q" comment="" name="Conexion_TW_Tareas" prompt="Conexion_TW_Tareas?" promptNeeded="false" type="id_String" value="&quot;tasks.json&quot;"/>
+  <contextParameter xmi:id="_JATQwih5EemOc_Oi3N3v-Q" comment="" name="Conexion_TW_Token" prompt="Conexion_TW_Token?" promptNeeded="false" type="id_String" value="&quot;twp_ZVSQNoStfl5Jok8jfnE8zxGK6DNa&quot;"/>
+  <contextParameter xmi:id="_oAYoMCh6EemOc_Oi3N3v-Q" comment="" name="Conexion_TW_Usuario" prompt="Conexion_TW_Usuario?" promptNeeded="false" type="id_String" value="&quot;fabian.jaque@backspace.cl&quot;"/>
+  <contextParameter xmi:id="_oAYoMSh6EemOc_Oi3N3v-Q" comment="" name="Conexion_TW_Pass" prompt="Conexion_TW_Pass?" promptNeeded="false" type="id_Password" value="nHTnjOxOxCwRQoDWHcLh9w=="/>
+  <contextParameter xmi:id="_HtP7MCh-EemOc_Oi3N3v-Q" comment="" name="Conexion_TW_Actividades" prompt="Conexion_TW_Actividades?" promptNeeded="false" type="id_String" value="&quot;time_entries.json&quot;"/>
+</talendfile:ContextType>

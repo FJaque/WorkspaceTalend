@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_oIskQDN-Eemfn6XLzeUUHQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_oItLUDN-Eemfn6XLzeUUHQ" comment="" name="FTPhost" prompt="FTPhost?" promptNeeded="false" type="id_String" value="&quot;filetransfer.falabella.cl&quot;"/>
+    <contextParameter xmi:id="_oItLUTN-Eemfn6XLzeUUHQ" comment="" name="FTPpuerto" prompt="FTPpuerto?" promptNeeded="false" type="id_Integer" value="10022"/>
+    <contextParameter xmi:id="_oItLUjN-Eemfn6XLzeUUHQ" comment="" name="FTPusuario" prompt="FTPusuario?" promptNeeded="false" type="id_String" value="&quot;backspace_ftp&quot;"/>
+    <contextParameter xmi:id="_oItLUzN-Eemfn6XLzeUUHQ" comment="" name="FTPpass" prompt="FTPpass?" promptNeeded="false" type="id_Password" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_oItLVDN-Eemfn6XLzeUUHQ" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_oItLVTN-Eemfn6XLzeUUHQ" comment="" name="FTPhost" prompt="FTPhost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oItLVjN-Eemfn6XLzeUUHQ" comment="" name="FTPpuerto" prompt="FTPpuerto?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_oItLVzN-Eemfn6XLzeUUHQ" comment="" name="FTPusuario" prompt="FTPusuario?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oItLWDN-Eemfn6XLzeUUHQ" comment="" name="FTPpass" prompt="FTPpass?" promptNeeded="false" type="id_Password" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
